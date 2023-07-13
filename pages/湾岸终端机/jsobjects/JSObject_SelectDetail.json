@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject_SelectDetail",
+    "pageId": "湾岸终端机",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tRuning: () => {\n\t\tSelect_Car_Tune_NoDe.run();\n\t\tWheel.run();\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "湾岸终端机_JSObject_SelectDetail",
+  "deleted": false,
+  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64afebc36fbfd93d5cd4ba00"
+}
