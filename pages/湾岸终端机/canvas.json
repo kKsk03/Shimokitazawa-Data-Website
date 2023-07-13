@@ -2,6 +2,7 @@
   "unpublishedPage": {
     "name": "湾岸终端机",
     "slug": "",
+    "customSlug": "",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 880,
+          "bottomRow": 460,
           "containerStyle": "none",
           "snapRows": 88,
           "parentRowSpace": 1,
@@ -73,10 +74,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 16,
+              "originalTopRow": 23,
               "disabledWhenInvalid": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 20,
+              "originalBottomRow": 27,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
@@ -109,7 +110,7 @@
               "isLoading": false,
               "regex": "",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 16,
+              "originalBottomRow": 23,
               "widgetName": "InputAccessCode",
               "displayName": "输入框",
               "searchTags": [
@@ -135,7 +136,7 @@
               "parentId": "0",
               "labelAlignment": "left",
               "renderMode": "CANVAS",
-              "originalTopRow": 9,
+              "originalTopRow": 16,
               "maxDynamicHeight": 9000,
               "isSpellCheck": false,
               "iconAlign": "left",
@@ -161,6 +162,7 @@
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
+              "shouldScrollContents": true,
               "animateLoading": true,
               "overflow": "NONE",
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
@@ -194,10 +196,8 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 1,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 2,
               "fontSize": "3rem",
               "minDynamicHeight": 4
             },
@@ -253,10 +253,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 3,
+              "originalTopRow": 10,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 7,
+              "originalBottomRow": 14,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -1634,7 +1634,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": false
+    "isHidden": true
   },
   "deleted": false,
   "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64afe29b6fbfd93d5cd4b9ed"
