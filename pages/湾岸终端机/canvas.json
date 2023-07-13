@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 880,
+          "bottomRow": 460,
           "containerStyle": "none",
           "snapRows": 88,
           "parentRowSpace": 1,
@@ -39,8 +39,8 @@
                 "submit",
                 "button"
               ],
-              "topRow": 21,
-              "bottomRow": 25,
+              "topRow": 16,
+              "bottomRow": 20,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -73,17 +73,17 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 19,
+              "originalTopRow": 16,
               "disabledWhenInvalid": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 23,
+              "originalBottomRow": 20,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
             {
               "boxShadow": "none",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-              "topRow": 14,
+              "topRow": 9,
               "labelWidth": 5,
               "type": "INPUT_WIDGET_V2",
               "animateLoading": true,
@@ -109,7 +109,7 @@
               "isLoading": false,
               "regex": "",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 19,
+              "originalBottomRow": 16,
               "widgetName": "InputAccessCode",
               "displayName": "输入框",
               "searchTags": [
@@ -118,7 +118,7 @@
                 "number",
                 "textarea"
               ],
-              "bottomRow": 21,
+              "bottomRow": 16,
               "parentRowSpace": 10,
               "autoFocus": false,
               "hideCard": false,
@@ -135,7 +135,7 @@
               "parentId": "0",
               "labelAlignment": "left",
               "renderMode": "CANVAS",
-              "originalTopRow": 12,
+              "originalTopRow": 9,
               "maxDynamicHeight": 9000,
               "isSpellCheck": false,
               "iconAlign": "left",
@@ -157,7 +157,7 @@
                 "字符"
               ],
               "topRow": 1,
-              "bottomRow": 7,
+              "bottomRow": 2,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -194,10 +194,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 0,
+              "originalTopRow": 1,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 6,
+              "originalBottomRow": 2,
               "fontSize": "3rem",
               "minDynamicHeight": 4
             },
@@ -215,8 +215,8 @@
                 "段落",
                 "字符"
               ],
-              "topRow": 8,
-              "bottomRow": 12,
+              "topRow": 3,
+              "bottomRow": 7,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -253,10 +253,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 6,
+              "originalTopRow": 3,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 10,
+              "originalBottomRow": 7,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -292,13 +292,13 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 760,
+                  "bottomRow": 780,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 770,
+                  "minHeight": 778,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
@@ -315,8 +315,8 @@
                         "submit",
                         "icon button"
                       ],
-                      "topRow": 0,
-                      "bottomRow": 4,
+                      "topRow": 2,
+                      "bottomRow": 6,
                       "type": "ICON_BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -325,7 +325,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 61,
+                      "leftColumn": 60,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -376,7 +376,7 @@
                           "key": "onOptionChange"
                         }
                       ],
-                      "leftColumn": 1,
+                      "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -396,7 +396,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 36,
+                      "rightColumn": 59,
                       "dynamicHeight": "FIXED",
                       "widgetId": "mg7tzj58yo",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -408,12 +408,12 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "onOptionChange": "{{JSObject_SelectDetail.Runing()}}",
+                      "onOptionChange": "{{JSObject_SelectDetail.Tune_Run()}}",
                       "minDynamicHeight": 4
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "widgetName": "Tabs1",
+                      "widgetName": "TabsDatas",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
                       "displayName": "标签页",
@@ -422,7 +422,7 @@
                         "tabs"
                       ],
                       "topRow": 9,
-                      "bottomRow": 74,
+                      "bottomRow": 76,
                       "parentRowSpace": 10,
                       "type": "TABS_WIDGET",
                       "hideCard": false,
@@ -430,7 +430,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 17.375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 1,
+                      "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -447,14 +447,14 @@
                           "tabId": "tab1",
                           "widgetName": "Canvas2",
                           "displayName": "Canvas",
-                          "bottomRow": 640,
+                          "bottomRow": 620,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": true,
                           "hideCard": true,
                           "shouldScrollContents": false,
-                          "minHeight": 600,
+                          "minHeight": 620,
                           "parentColumnSpace": 1,
                           "dynamicTriggerPathList": [],
                           "leftColumn": 0,
@@ -462,19 +462,438 @@
                           "children": [
                             {
                               "boxShadow": "none",
-                              "widgetName": "Select_Aero",
+                              "widgetName": "Select_Plate",
                               "isFilterable": true,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
                               "displayName": "下拉单选",
                               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                              "labelText": "轮毂",
+                              "labelText": "车牌灯",
                               "searchTags": [
                                 "dropdown",
                                 "select"
                               ],
-                              "topRow": 9,
-                              "bottomRow": 13,
+                              "topRow": 40,
+                              "bottomRow": 44,
                               "parentRowSpace": 10,
-                              "labelWidth": "3",
+                              "labelWidth": "6",
+                              "type": "SELECT_WIDGET",
+                              "serverSideFiltering": false,
+                              "hideCard": false,
+                              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Select_Car_Tune_NoDe.data[0].plate))(Select_Plate.options, Select_Plate.serverSideFiltering) }}",
+                              "animateLoading": true,
+                              "parentColumnSpace": 16.51953125,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "options"
+                                },
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelTooltip": "请至少选择一个选项",
+                              "options": "{{Plate.data}}",
+                              "labelStyle": "BOLD",
+                              "placeholderText": "请选择",
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
+                              "key": "s3kp677ouf",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 29,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "auv1ywk102",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "xbl5xf3rh9",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Select_Trunk",
+                              "isFilterable": true,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "displayName": "下拉单选",
+                              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                              "labelText": "尾箱盖",
+                              "searchTags": [
+                                "dropdown",
+                                "select"
+                              ],
+                              "topRow": 35,
+                              "bottomRow": 39,
+                              "parentRowSpace": 10,
+                              "labelWidth": "6",
+                              "type": "SELECT_WIDGET",
+                              "serverSideFiltering": false,
+                              "hideCard": false,
+                              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Select_Car_Tune_NoDe.data[0].trunk))(Select_Trunk.options, Select_Trunk.serverSideFiltering) }}",
+                              "animateLoading": true,
+                              "parentColumnSpace": 16.51953125,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "options"
+                                },
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelTooltip": "请至少选择一个选项",
+                              "options": "{{Trunk.data}}",
+                              "labelStyle": "BOLD",
+                              "placeholderText": "请选择",
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
+                              "key": "s3kp677ouf",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 29,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "igrjsy2mte",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "xbl5xf3rh9",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Select_Neon",
+                              "isFilterable": true,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "displayName": "下拉单选",
+                              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                              "labelText": "底盘灯",
+                              "searchTags": [
+                                "dropdown",
+                                "select"
+                              ],
+                              "topRow": 30,
+                              "bottomRow": 34,
+                              "parentRowSpace": 10,
+                              "labelWidth": "6",
+                              "type": "SELECT_WIDGET",
+                              "serverSideFiltering": false,
+                              "hideCard": false,
+                              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Select_Car_Tune_NoDe.data[0].neon))(Select_Neon.options, Select_Neon.serverSideFiltering) }}",
+                              "animateLoading": true,
+                              "parentColumnSpace": 16.51953125,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "options"
+                                },
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelTooltip": "请至少选择一个选项",
+                              "options": "{{Neon.data}}",
+                              "labelStyle": "BOLD",
+                              "placeholderText": "请选择",
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
+                              "key": "s3kp677ouf",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 29,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "vcrv7u53mp",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "xbl5xf3rh9",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Select_Mirror",
+                              "isFilterable": true,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "displayName": "下拉单选",
+                              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                              "labelText": "后视镜",
+                              "searchTags": [
+                                "dropdown",
+                                "select"
+                              ],
+                              "topRow": 25,
+                              "bottomRow": 29,
+                              "parentRowSpace": 10,
+                              "labelWidth": "6",
+                              "type": "SELECT_WIDGET",
+                              "serverSideFiltering": false,
+                              "hideCard": false,
+                              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Select_Car_Tune_NoDe.data[0].mirror))(Select_Mirror.options, Select_Mirror.serverSideFiltering) }}",
+                              "animateLoading": true,
+                              "parentColumnSpace": 16.51953125,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "options"
+                                },
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelTooltip": "请至少选择一个选项",
+                              "options": "{{Mirror.data}}",
+                              "labelStyle": "BOLD",
+                              "placeholderText": "请选择",
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
+                              "key": "s3kp677ouf",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 29,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "brp94mgbvl",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "xbl5xf3rh9",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Select_Wing",
+                              "isFilterable": true,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "displayName": "下拉单选",
+                              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                              "labelText": "尾翼",
+                              "searchTags": [
+                                "dropdown",
+                                "select"
+                              ],
+                              "topRow": 20,
+                              "bottomRow": 24,
+                              "parentRowSpace": 10,
+                              "labelWidth": "4",
+                              "type": "SELECT_WIDGET",
+                              "serverSideFiltering": false,
+                              "hideCard": false,
+                              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Select_Car_Tune_NoDe.data[0].wing))(Select_Wing.options, Select_Wing.serverSideFiltering) }}",
+                              "animateLoading": true,
+                              "parentColumnSpace": 16.51953125,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "options"
+                                },
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelTooltip": "并非自定义尾翼\n请至少选择一个选项",
+                              "options": "{{Wing.data}}",
+                              "labelStyle": "BOLD",
+                              "placeholderText": "请选择",
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue || Select_Car_Tune_NoDe.data[0].wing === 127}}",
+                              "key": "s3kp677ouf",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 29,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "qers8lz1dn",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "xbl5xf3rh9",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Select_Bonnet",
+                              "isFilterable": true,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "displayName": "下拉单选",
+                              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                              "labelText": "引擎盖",
+                              "searchTags": [
+                                "dropdown",
+                                "select"
+                              ],
+                              "topRow": 15,
+                              "bottomRow": 19,
+                              "parentRowSpace": 10,
+                              "labelWidth": "6",
+                              "type": "SELECT_WIDGET",
+                              "serverSideFiltering": false,
+                              "hideCard": false,
+                              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Select_Car_Tune_NoDe.data[0].bonnet))(Select_Bonnet.options, Select_Bonnet.serverSideFiltering) }}",
+                              "animateLoading": true,
+                              "parentColumnSpace": 16.51953125,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "options"
+                                },
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelTooltip": "请至少选择一个选项",
+                              "options": "{{Bonnet.data}}",
+                              "labelStyle": "BOLD",
+                              "placeholderText": "请选择",
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
+                              "key": "s3kp677ouf",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 29,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "4tunjvggwm",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "xbl5xf3rh9",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Select_Aero",
+                              "isFilterable": true,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "displayName": "下拉单选",
+                              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                              "labelText": "车身包围",
+                              "searchTags": [
+                                "dropdown",
+                                "select"
+                              ],
+                              "topRow": 10,
+                              "bottomRow": 14,
+                              "parentRowSpace": 10,
+                              "labelWidth": "7",
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
@@ -495,6 +914,9 @@
                                 },
                                 {
                                   "key": "options"
+                                },
+                                {
+                                  "key": "isDisabled"
                                 }
                               ],
                               "labelPosition": "Left",
@@ -502,12 +924,12 @@
                               "options": "{{Aero.data}}",
                               "labelStyle": "BOLD",
                               "placeholderText": "请选择",
-                              "isDisabled": false,
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
                               "key": "s3kp677ouf",
                               "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "isDeprecated": false,
-                              "rightColumn": 20,
+                              "rightColumn": 29,
                               "dynamicHeight": "FIXED",
                               "widgetId": "p92huwxtfc",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -565,7 +987,7 @@
                               "text": "当前选择车辆：{{SelectCarId.selectedOptionLabel}}",
                               "key": "uqlhtfg82u",
                               "isDeprecated": false,
-                              "rightColumn": 36,
+                              "rightColumn": 63,
                               "textAlign": "LEFT",
                               "dynamicHeight": "FIXED",
                               "widgetId": "hy2icggrg3",
@@ -585,6 +1007,11 @@
                               "boxShadow": "none",
                               "widgetName": "Select_Wheel",
                               "isFilterable": true,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
                               "displayName": "下拉单选",
                               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                               "labelText": "轮毂",
@@ -595,7 +1022,7 @@
                               "topRow": 5,
                               "bottomRow": 9,
                               "parentRowSpace": 10,
-                              "labelWidth": "3",
+                              "labelWidth": "4",
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
@@ -616,6 +1043,9 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "isDisabled"
                                 }
                               ],
                               "labelPosition": "Left",
@@ -623,12 +1053,12 @@
                               "options": "{{Wheel.data}}",
                               "labelStyle": "BOLD",
                               "placeholderText": "请选择",
-                              "isDisabled": false,
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
                               "key": "s3kp677ouf",
                               "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "isDeprecated": false,
-                              "rightColumn": 20,
+                              "rightColumn": 29,
                               "dynamicHeight": "FIXED",
                               "widgetId": "055r9mt23l",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -640,6 +1070,443 @@
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "widgetName": "Divider1",
+                              "thickness": "5",
+                              "displayName": "分隔线",
+                              "iconSVG": "/static/media/icon.cbe8f608ca868e1eb44607e5fbd4a9e5.svg",
+                              "searchTags": [
+                                "line",
+                                "divider"
+                              ],
+                              "topRow": 45,
+                              "bottomRow": 49,
+                              "parentRowSpace": 10,
+                              "type": "DIVIDER_WIDGET",
+                              "capType": "nc",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 16.51953125,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [],
+                              "key": "fv4d4rxkcb",
+                              "dividerColor": "#858282",
+                              "orientation": "horizontal",
+                              "strokeStyle": "solid",
+                              "isDeprecated": false,
+                              "rightColumn": 30,
+                              "widgetId": "00alnio06d",
+                              "capSide": 0,
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "xbl5xf3rh9",
+                              "renderMode": "CANVAS",
+                              "isLoading": false
+                            },
+                            {
+                              "widgetName": "Checkbox_Stick",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "defaultCheckedState"
+                                },
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "displayName": "勾选",
+                              "iconSVG": "/static/media/icon.aaab032b43383e4fa53ffc0ef40c90ef.svg",
+                              "searchTags": [
+                                "boolean",
+                                "checkbox"
+                              ],
+                              "topRow": 50,
+                              "bottomRow": 54,
+                              "parentRowSpace": 10,
+                              "type": "CHECKBOX_WIDGET",
+                              "alignWidget": "LEFT",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 16.51953125,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultCheckedState"
+                                },
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelStyle": "BOLD",
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
+                              "key": "vsk3j4wmhe",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 29,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "mx2x9uelk3",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "label": "是否启用挡风玻璃贴纸",
+                              "version": 1,
+                              "parentId": "xbl5xf3rh9",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "defaultCheckedState": "{{Select_Car_Tune_NoDe.data[0].windowSticker}}",
+                              "maxDynamicHeight": 9000,
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Input_Stick",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "displayName": "输入框",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "topRow": 55,
+                              "bottomRow": 59,
+                              "parentRowSpace": 10,
+                              "labelWidth": "11",
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 16.51953125,
+                              "dynamicTriggerPathList": [],
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "isDisabled"
+                                },
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelStyle": "BOLD",
+                              "inputType": "TEXT",
+                              "maxChars": "8",
+                              "isDisabled": "{{!Checkbox_Stick.isChecked || !SelectCarId.selectedOptionValue}}",
+                              "key": "61xtrya5sr",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 29,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "7lm7jhfowu",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "label": "挡风玻璃贴纸上的字",
+                              "version": 2,
+                              "parentId": "xbl5xf3rh9",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "regex": "^([ぁ-んァ-ン！：＠★・／ァ-ンＡ-ｚ０-９]){1,8}$",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "iconAlign": "left",
+                              "defaultText": "{{Select_Car_Tune_NoDe.data[0].windowStickerString}}",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "widgetName": "Divider2",
+                              "thickness": "5",
+                              "displayName": "分隔线",
+                              "iconSVG": "/static/media/icon.cbe8f608ca868e1eb44607e5fbd4a9e5.svg",
+                              "searchTags": [
+                                "line",
+                                "divider"
+                              ],
+                              "topRow": 5,
+                              "bottomRow": 60,
+                              "parentRowSpace": 10,
+                              "type": "DIVIDER_WIDGET",
+                              "capType": "nc",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 12.08447265625,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 30,
+                              "dynamicBindingPathList": [],
+                              "key": "fv4d4rxkcb",
+                              "dividerColor": "#858282",
+                              "orientation": "vertical",
+                              "strokeStyle": "solid",
+                              "isDeprecated": false,
+                              "rightColumn": 32,
+                              "widgetId": "wysvdulakl",
+                              "capSide": 0,
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "xbl5xf3rh9",
+                              "renderMode": "CANVAS",
+                              "isLoading": false
+                            },
+                            {
+                              "widgetName": "Text3",
+                              "displayName": "文本",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label",
+                                "text",
+                                "文字",
+                                "标题",
+                                "段落",
+                                "字符"
+                              ],
+                              "topRow": 5,
+                              "bottomRow": 9,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 12.08447265625,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 33,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "truncateButtonColor"
+                                },
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "text": "使用注意事项",
+                              "key": "0wtn3olohx",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "textAlign": "LEFT",
+                              "dynamicHeight": "AUTO_HEIGHT",
+                              "widgetId": "s978v668x7",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "xbl5xf3rh9",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "originalTopRow": 5,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "originalBottomRow": 9,
+                              "fontSize": "1.25rem",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "widgetName": "Text4",
+                              "displayName": "文本",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label",
+                                "text",
+                                "文字",
+                                "标题",
+                                "段落",
+                                "字符"
+                              ],
+                              "topRow": 9,
+                              "bottomRow": 22,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 12.08447265625,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 33,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "truncateButtonColor"
+                                },
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "text": "1. 若您需要安装自定义GT尾翼，请\n2. 由于暂未查清ID等缘故，目前无法设置轮毂、底盘灯等的颜色\n3. 只能设置你已有的改装件\n4. 若您使用了自定义GT尾翼，则该页面的尾翼选项不可用",
+                              "key": "0wtn3olohx",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "textAlign": "LEFT",
+                              "dynamicHeight": "AUTO_HEIGHT",
+                              "widgetId": "oi9watupjg",
+                              "isVisible": true,
+                              "fontStyle": "",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "xbl5xf3rh9",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "originalTopRow": 9,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "originalBottomRow": 22,
+                              "fontSize": "1rem",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "resetFormOnClick": false,
+                              "boxShadow": "none",
+                              "widgetName": "Button_Update",
+                              "onClick": "{{JSObject_Update_Datas.Tune_Update()}}",
+                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "displayName": "按钮",
+                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                              "searchTags": [
+                                "click",
+                                "submit",
+                                "button"
+                              ],
+                              "topRow": 55,
+                              "bottomRow": 59,
+                              "parentRowSpace": 10,
+                              "type": "BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 12.08447265625,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 33,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "buttonColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "text": "提交修改",
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
+                              "key": "s4g9pnjp5q",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "eqk8evmejy",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "xbl5xf3rh9",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "originalTopRow": 55,
+                              "disabledWhenInvalid": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "originalBottomRow": 59,
+                              "buttonVariant": "PRIMARY",
+                              "placement": "CENTER"
+                            },
+                            {
+                              "widgetName": "Text5",
+                              "displayName": "文本",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label",
+                                "text",
+                                "文字",
+                                "标题",
+                                "段落",
+                                "字符"
+                              ],
+                              "topRow": 22,
+                              "bottomRow": 27,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 12.08447265625,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 33,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "truncateButtonColor"
+                                },
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "text": "注意！如果你想要原厂部件/不安装部件，也一定要选择对应选项！不能留空！否则无法提交修改！",
+                              "key": "6sxlu3p12a",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "textAlign": "LEFT",
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "bgkljg76k5",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#dc2626",
+                              "version": 1,
+                              "parentId": "xbl5xf3rh9",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "originalTopRow": 22,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "originalBottomRow": 27,
+                              "fontSize": "1rem",
                               "minDynamicHeight": 4
                             }
                           ],
@@ -660,14 +1527,14 @@
                           "tabId": "tab2",
                           "widgetName": "Canvas3",
                           "displayName": "Canvas",
-                          "bottomRow": 600,
+                          "bottomRow": 620,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": true,
                           "hideCard": true,
                           "shouldScrollContents": false,
-                          "minHeight": 600,
+                          "minHeight": 620,
                           "parentColumnSpace": 1,
                           "dynamicTriggerPathList": [],
                           "leftColumn": 0,
@@ -676,7 +1543,7 @@
                           "isDisabled": false,
                           "key": "ygnver8d8c",
                           "isDeprecated": false,
-                          "tabName": "GT尾翼",
+                          "tabName": "自定义GT尾翼",
                           "rightColumn": 417,
                           "detachFromLayout": true,
                           "widgetId": "frzu5zwytr",
@@ -691,7 +1558,7 @@
                       "key": "6xciw2b53c",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 64,
                       "dynamicHeight": "FIXED",
                       "widgetId": "pytmjftn4s",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -706,7 +1573,7 @@
                           "index": 0
                         },
                         "tab2": {
-                          "label": "GT尾翼",
+                          "label": "自定义GT尾翼",
                           "id": "tab2",
                           "widgetId": "frzu5zwytr",
                           "isVisible": true,
@@ -737,7 +1604,7 @@
                 }
               ],
               "key": "q3q8e168mz",
-              "height": 764,
+              "height": 778,
               "isDeprecated": false,
               "rightColumn": 38,
               "detachFromLayout": true,
@@ -751,7 +1618,7 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "width": 1124,
+              "width": 830,
               "minDynamicHeight": 24
             }
           ]

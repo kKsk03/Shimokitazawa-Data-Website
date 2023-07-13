@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "Runing",
-    "fullyQualifiedName": "JSObject_SelectDetail.Runing",
+    "name": "Tune_Run",
+    "fullyQualifiedName": "JSObject_SelectDetail.Tune_Run",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  Select_Car_Tune_NoDe.run();\n  Wheel.run();\n}",
+      "body": "() => {\n  Select_Car_Tune_NoDe.run();\n  Wheel.run();\n  Aero.run();\n  Bonnet.run();\n  Wing.run();\n  Mirror.run();\n  Neon.run();\n  Trunk.run();\n  Plate.run();\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  Select_Car_Tune_NoDe.run();\n  Wheel.run();\n}"
+      "() => {\n  Select_Car_Tune_NoDe.run();\n  Wheel.run();\n  Aero.run();\n  Bonnet.run();\n  Wing.run();\n  Mirror.run();\n  Neon.run();\n  Trunk.run();\n  Plate.run();\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "湾岸终端机_JSObject_SelectDetail.Runing",
+  "id": "湾岸终端机_JSObject_SelectDetail.Tune_Run",
   "deleted": false,
   "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64afebc36fbfd93d5cd4b9fc"
 }

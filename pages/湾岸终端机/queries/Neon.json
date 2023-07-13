@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Select_Car_Tune_NoDe",
+    "name": "Neon",
     "datasource": {
       "name": "OLG",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \"carId\", wheel, aero, bonnet, wing, mirror, neon, trunk, plate, \"windowSticker\", \"windowStickerString\"\n\tFROM public.\"Car\"\n\tWHERE \"carId\" = {{SelectCarId.selectedOptionValue}};\nSELECT pg_sleep(3);",
+      "body": "SELECT\n\t\"itemId\" AS value,\n\tCASE\n\t\tWHEN \"itemId\" = 1 THEN 'Neon (Arch) Green'\n\t\tWHEN \"itemId\" = 2 THEN 'Neon (Arch) Blue'\n\t\tWHEN \"itemId\" = 3 THEN 'Neon (Arch) Red'\n\t\tWHEN \"itemId\" = 4 THEN 'Neon (Arch) Yellow'\n\t\tWHEN \"itemId\" = 5 THEN 'Neon (Arch) Purple'\n\t\tWHEN \"itemId\" = 6 THEN 'Neon (Tribal) Green'\n\t\tWHEN \"itemId\" = 7 THEN 'Neon (Tribal) Blue'\n\t\tWHEN \"itemId\" = 8 THEN 'Neon (Tribal) Red'\n\t\tWHEN \"itemId\" = 9 THEN 'Neon (Tribal) Yellow'\n\t\tWHEN \"itemId\" = 10 THEN 'Neon (Tribal) Purple'\n\t\tELSE '未知底盘灯，请向管理员报告此错误'\n\tEND AS label\nFROM public.\"CarItem\"\nWHERE \"carId\" = {{SelectCarId.selectedOptionValue}} AND \"category\" = 8\nUNION\n\nSELECT\n    0 AS value,\n    '无底盘灯' AS label\nORDER BY value ASC;\nSELECT pg_sleep(3);\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -43,7 +43,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "湾岸终端机_Select_Car_Tune_NoDe",
+  "id": "湾岸终端机_Neon",
   "deleted": false,
-  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64afe64a6fbfd93d5cd4b9f6"
+  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64b010a26fbfd93d5cd4ba1f"
 }

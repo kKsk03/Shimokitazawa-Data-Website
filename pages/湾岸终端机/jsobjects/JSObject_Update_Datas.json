@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject_Update_Datas",
+    "pageId": "湾岸终端机",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tTune_Update: () => {\n\t\tlet state = 1;\n\t\tif(Select_Wheel.selectedOptionLabel === \"\")\n\t\t{\n\t\t\tshowAlert('请选择一个轮毂样式');\n\t\t\tstate = 0;\n\t\t}\n\n\t\tif(Select_Aero.selectedOptionLabel === \"\")\n\t\t{\n\t\t\tshowAlert('请选择一个包围样式');\n\t\t\tstate = 0;\n\t\t}\n\n\t\tif(Select_Bonnet.selectedOptionLabel === \"\")\n\t\t{\n\t\t\tshowAlert('请选择一个引擎盖样式');\n\t\t\tstate = 0;\n\t\t}\n\n\t\tif(Select_Mirror.selectedOptionLabel === \"\")\n\t\t{\n\t\t\tshowAlert('请选择一个后视镜样式');\n\t\t\tstate = 0;\n\t\t}\n\n\t\tif(Select_Neon.selectedOptionLabel === \"\")\n\t\t{\n\t\t\tshowAlert('请选择一个车底灯样式');\n\t\t\tstate = 0;\n\t\t}\n\n\t\tif(Select_Plate.selectedOptionLabel === \"\")\n\t\t{\n\t\t\tshowAlert('请选择一个车牌灯样式');\n\t\t\tstate = 0;\n\t\t}\n\n\t\tif(Select_Wing.selectedOptionLabel === \"\")\n\t\t{\n\t\t\tshowAlert('请选择一个尾翼样式');\n\t\t\tstate = 0;\n\t\t}\n\n\t\tif(Select_Trunk.selectedOptionLabel === \"\")\n\t\t{\n\t\t\tshowAlert('请选择一个后尾箱样式');\n\t\t\tstate = 0;\n\t\t}\n\n\t\tif(state === 0)\n\t\t{\n\t\t\treturn \"不执行上传指令\"\n\t\t}\n\t\telse if(state === 1)\n\t\t{\n\t\t\tshowAlert('执行');\n\t\t\tUpdate_Car.run();\n\t\t\tshowAlert('已提交修改，请到游戏内确认');\n\t\t\tSelect_Car_Tune_NoDe.run(); //更新数据\n\t\t}\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "湾岸终端机_JSObject_Update_Datas",
+  "deleted": false,
+  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64b0169f6fbfd93d5cd4ba2b"
+}

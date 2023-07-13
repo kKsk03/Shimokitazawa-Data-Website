@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Select_Car_Tune_NoDe",
+    "name": "Plate",
     "datasource": {
       "name": "OLG",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \"carId\", wheel, aero, bonnet, wing, mirror, neon, trunk, plate, \"windowSticker\", \"windowStickerString\"\n\tFROM public.\"Car\"\n\tWHERE \"carId\" = {{SelectCarId.selectedOptionValue}};\nSELECT pg_sleep(3);",
+      "body": "SELECT\n\t\"itemId\" AS value,\n\tCASE\n\t\tWHEN \"itemId\" = 1 THEN 'Number plate frame A'\n\t\tWHEN \"itemId\" = 2 THEN 'Number plate frame B'\n\t\tWHEN \"itemId\" = 3 THEN 'Number plate frame C'\n\t\tWHEN \"itemId\" = 4 THEN 'Number plate frame D'\n\t\tELSE '未知车牌灯，请向管理员报告此错误'\n\tEND AS label\nFROM public.\"CarItem\"\nWHERE \"carId\" = {{SelectCarId.selectedOptionValue}} AND \"category\" = 10\nUNION\n\nSELECT\n    0 AS value,\n    '无车牌灯' AS label\nORDER BY value ASC;\nSELECT pg_sleep(3);\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -43,7 +43,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "湾岸终端机_Select_Car_Tune_NoDe",
+  "id": "湾岸终端机_Plate",
   "deleted": false,
-  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64afe64a6fbfd93d5cd4b9f6"
+  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64b0124f6fbfd93d5cd4ba24"
 }

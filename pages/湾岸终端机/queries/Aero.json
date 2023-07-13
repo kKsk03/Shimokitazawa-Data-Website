@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT\n\t\"itemId\" AS value,\n\tCASE\n\t\tWHEN \"itemId\" = 1 THEN 'I型包围'\n\t\tWHEN \"itemId\" = 2 THEN 'J型包围'\n\t\tWHEN \"itemId\" = 3 THEN 'K型包围'\n\t\tWHEN \"itemId\" = 4 THEN 'A型包围'\n\t\tWHEN \"itemId\" = 5 THEN 'B型包围'\n\t\tWHEN \"itemId\" = 6 THEN 'C型包围'\n\t\tWHEN \"itemId\" = 7 THEN 'D型包围'\n\t\tWHEN \"itemId\" = 8 THEN 'E型包围'\n\t\tWHEN \"itemId\" = 9 THEN 'F型包围'\n\t\tWHEN \"itemId\" = 10 THEN 'G型包围'\n\t\tWHEN \"itemId\" = 11 THEN 'H型包围'\n\t\tELSE '未知套件，请向管理员报告此错误'\n\tEND AS label\nFROM public.\"CarItem\"\nWHERE \"carId\" = {{SelectCarId.selectedOptionValue}} AND \"category\" = 300\nORDER BY value ASC;\n",
+      "body": "SELECT\n    \"itemId\" AS value,\n    CASE\n        WHEN \"itemId\" = 1 THEN 'I型包围'\n        WHEN \"itemId\" = 2 THEN 'J型包围'\n        WHEN \"itemId\" = 3 THEN 'K型包围'\n        WHEN \"itemId\" = 4 THEN 'A型包围'\n        WHEN \"itemId\" = 5 THEN 'B型包围'\n        WHEN \"itemId\" = 6 THEN 'C型包围'\n        WHEN \"itemId\" = 7 THEN 'D型包围'\n        WHEN \"itemId\" = 8 THEN 'E型包围'\n        WHEN \"itemId\" = 9 THEN 'F型包围'\n        WHEN \"itemId\" = 10 THEN 'G型包围'\n        WHEN \"itemId\" = 11 THEN 'H型包围'\n        ELSE '未知套件，请向管理员报告此错误'\n    END AS label\nFROM public.\"CarItem\"\nWHERE \"carId\" = {{SelectCarId.selectedOptionValue}} AND \"category\" = 300\n\nUNION\n\nSELECT\n    0 AS value,\n    '原厂车身套件' AS label\nORDER BY value ASC;\nSELECT pg_sleep(3);\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
