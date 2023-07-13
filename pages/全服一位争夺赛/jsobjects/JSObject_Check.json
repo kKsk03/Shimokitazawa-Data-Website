@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject_Check",
+    "pageId": "全服一位争夺赛",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tCheck: () => {\n\n\t\t\tconst handleButtonClick = async () => {\n\t\t\tconst selectRacingPeriodValue = SelectRacingPeriod.selectedOptionValue; // 获取下拉框的值\n\n\t\t\tlet result;\n\n\t\t\t// 根据下拉框的值选择执行不同的查询\n\t\t\tif (selectRacingPeriodValue === 'true') {\n\t\t\t\tresult = await SelectData_MainDraw.run(); // 执行 SelectData_MainDraw 查询\n\t\t\t} else {\n\t\t\t\tresult = await SelectData_NoMainDraw.run(); // 执行 SelectData_NoMainDraw 查询\n\t\t\t}\n\n\t\t\t// 将查询结果绑定到表格数据源\n\t\t\tTableDataNoMainDraw.tableData = result;\n\n\t\t\t// 刷新表格以显示新的数据\n\t\t\tTableDataNoMainDraw.triggeredRow();\n\t\t};\n\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "全服一位争夺赛_JSObject_Check",
+  "deleted": false,
+  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_649fd6836fbfd93d5cd4894f"
+}

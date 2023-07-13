@@ -1,0 +1,25 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject_Table",
+    "pageId": "计时挑战模式排名",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tHorsePower: () => {\n\n\t\tshowAlert('查询成功', 'success');\n\t\t\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "计时挑战模式排名_JSObject_Table",
+  "deleted": false,
+  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_6489be3b6fbfd93d5cd42f38"
+}

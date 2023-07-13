@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject_Select",
+    "pageId": "车辆数据查询修改站",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tSelectCarInfo: () => {\n\t\tSelect_Car_Detail.run();\n\t\tSelect_Car_RacingMeter.run();\n\t\tshowAlert(\"查询成功\");\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "车辆数据查询修改站_JSObject_Select",
+  "deleted": false,
+  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_649c2ab26fbfd93d5cd47d1e"
+}

@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject_StorySetting",
+    "pageId": "车辆数据查询修改站",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n  story_menu_99: () => {\n\t\t\treturn storeValue(\"stCount\", {\"Number\": \"99\", \"Div\": \"4\"}, false);\n    },\n\tstory_menu_199: () => {\n\t\t\treturn storeValue(\"stCount\", {\"Number\": \"199\", \"Div\": \"9\"}, false);\n    },\n\tstory_menu_299: () => {\n\t\t\treturn storeValue(\"stCount\", {\"Number\": \"299\", \"Div\": \"14\"}, false);\n    },\n\tstory_menu_399: () => {\n\t\t\treturn storeValue(\"stCount\", {\"Number\": \"399\", \"Div\": \"19\"}, false);\n    },\n\tstory_menu_499: () => {\n\t\t\treturn storeValue(\"stCount\", {\"Number\": \"499\", \"Div\": \"24\"}, false);\n    },\t\n\tstory_menu_599: () => {\n\t\t\treturn storeValue(\"stCount\", {\"Number\": \"599\", \"Div\": \"29\"}, false);\n    },\t\n\tstory_menu_699: () => {\n\t\t\treturn storeValue(\"stCount\", {\"Number\": \"699\", \"Div\": \"34\"}, false);\n    },\t\n\tstory_menu_799: () => {\n\t\t\treturn storeValue(\"stCount\", {\"Number\": \"799\", \"Div\": \"39\"}, false);\n    },\t\n\tstory_menu_899: () => {\n\t\t\treturn storeValue(\"stCount\", {\"Number\": \"899\", \"Div\": \"44\"}, false);\n    },\t\n\tstory_menu_999: () => {\n\t\t\treturn storeValue(\"stCount\", {\"Number\": \"999\", \"Div\": \"49\"}, false);\n    }\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "车辆数据查询修改站_JSObject_StorySetting",
+  "deleted": false,
+  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64a154cf6fbfd93d5cd48cc3"
+}

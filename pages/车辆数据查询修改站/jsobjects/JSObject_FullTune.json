@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject_FullTune",
+    "pageId": "车辆数据查询修改站",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tfullytunecar: () => {\n\t\treturn storeValue(\"Fully\", {\"tunePower\": \"17\", \"tuneHandling\": \"17\", \"level\": \"8\", \"Number\": \"80\", \"Div\": \"4\", }, false);\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "车辆数据查询修改站_JSObject_FullTune",
+  "deleted": false,
+  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64ab948e6fbfd93d5cd4aca1"
+}
