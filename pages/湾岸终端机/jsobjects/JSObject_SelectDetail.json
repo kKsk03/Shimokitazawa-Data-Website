@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tTune_Run: () => {\n\t\tSelect_Car_Tune_NoDe.run(); //获取目前车辆改装件设置\n\t\tWheel.run(); //获取该车轮毂物品\n\t\tAero.run(); //获取该车包围物品\n\t\tBonnet.run(); //获取该车引擎盖物品\n\t\tWing.run(); //获取该车尾翼物品\n\t\tMirror.run(); //获取该车后视镜物品\n\t\tNeon.run(); //获取该车底盘灯物品\n\t\tTrunk.run(); //获取该车尾箱盖物品\n\t\tPlate.run(); //获取该车车牌灯物品\n\t}\n}",
+    "body": "export default {\n\tTune_Run: () => {\n\t\tSelect_Car_Tune_NoDe.run();\n\t\tWheel.run();\n\t\tAero.run();\n\t\tBonnet.run();\n\t\tWing.run();\n\t\tMirror.run();\n\t\tNeon.run();\n\t\tTrunk.run();\n\t\tPlate.run();\n\t\tGTWing.run();\n\t\tJSObject_GTWing.GTWingCheck();\n\t}\n}\n",
     "variables": [],
     "userPermissions": []
   },

@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject_GTWing",
+    "pageId": "湾岸终端机",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tInstallGTWing: () => {\n\t\tlet state = 1;\n\t\tif(Select_GTPillar.selectedOptionValue.length === 0)\n\t\t{\n\t\t\tshowAlert('请选择一个尾翼支撑架样式');\n\t\t\tstate = 0;\n\t\t}\n\n\t\tif(Select_GTPillarMaterial.selectedOptionValue.length === 0)\n\t\t{\n\t\t\tshowAlert('请选择一个尾翼支撑架颜色');\n\t\t\tstate = 0;\n\t\t}\n\n\t\tif(Select_GTMainWing.selectedOptionValue.length === 0)\n\t\t{\n\t\t\tshowAlert('请选择一个主尾翼板样式');\n\t\t\tstate = 0;\n\t\t}\n\n\t\tif(Select_GTMainWingColor.selectedOptionValue.length === 0)\n\t\t{\n\t\t\tshowAlert('请选择一个主尾翼板颜色');\n\t\t\tstate = 0;\n\t\t}\n\n\t\tif(Select_GTWingTip.selectedOptionValue.length === 0)\n\t\t{\n\t\t\tshowAlert('请选择一个主尾翼侧面板样式');\n\t\t\tstate = 0;\n\t\t}\n\n\t\tif(Select_Material.selectedOptionValue.length === 0)\n\t\t{\n\t\t\tshowAlert('请选择一个主尾翼板材质');\n\t\t\tstate = 0;\n\t\t}\n\n\t\tif(state === 0)\n\t\t{\n\t\t\tshowAlert('安装/更新失败，请确保所有选项都有选项选中');\n\t\t}\n\t\telse if(state === 1)\n\t\t{\n\t\t\tInstall_GT.run();\n\t\t\tSelect_GTDetails.run();\n\t\t\tSelect_Car_Tune_NoDe.run(); //更新改装件\n\t\t\tshowAlert('安装/更新自定义GT翼成功');\n\t\t}\n\t},\n\tUninstallGTWing: () => {\n\t\tUninstall_GT.run();\n\t\tSelect_GTDetails.run();\n\t\tSelect_Car_Tune_NoDe.run(); //更新改装件\n\t\tshowAlert('拆除自定义GT翼成功');\n\t},\n\tGTWingCheck: () => {\n\t\tif (GTWing.data.length > 0) {\n\t\t\treturn true;\n\t\t} else {\n\t\t\treturn false;\n\t\t}\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "湾岸终端机_JSObject_GTWing",
+  "deleted": false,
+  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64b032386fbfd93d5cd4ba43"
+}

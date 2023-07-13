@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "Tune_Run",
-    "fullyQualifiedName": "JSObject_SelectDetail.Tune_Run",
+    "name": "UninstallGTWing",
+    "fullyQualifiedName": "JSObject_GTWing.UninstallGTWing",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,18 +14,17 @@
       "userPermissions": []
     },
     "pageId": "湾岸终端机",
-    "collectionId": "湾岸终端机_JSObject_SelectDetail",
+    "collectionId": "湾岸终端机_JSObject_GTWing",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  Select_Car_Tune_NoDe.run();\n  Wheel.run();\n  Aero.run();\n  Bonnet.run();\n  Wing.run();\n  Mirror.run();\n  Neon.run();\n  Trunk.run();\n  Plate.run();\n  GTWing.run();\n  JSObject_GTWing.GTWingCheck();\n}",
+      "body": "() => {\n  Uninstall_GT.run();\n  Select_GTDetails.run();\n  Select_Car_Tune_NoDe.run();\n  showAlert('拆除自定义GT翼成功');\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -35,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  Select_Car_Tune_NoDe.run();\n  Wheel.run();\n  Aero.run();\n  Bonnet.run();\n  Wing.run();\n  Mirror.run();\n  Neon.run();\n  Trunk.run();\n  Plate.run();\n  GTWing.run();\n  JSObject_GTWing.GTWingCheck();\n}"
+      "() => {\n  Uninstall_GT.run();\n  Select_GTDetails.run();\n  Select_Car_Tune_NoDe.run();\n  showAlert('拆除自定义GT翼成功');\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "湾岸终端机_JSObject_SelectDetail.Tune_Run",
+  "id": "湾岸终端机_JSObject_GTWing.UninstallGTWing",
   "deleted": false,
-  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64afebc36fbfd93d5cd4b9fc"
+  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64b055f26fbfd93d5cd4ba56"
 }
