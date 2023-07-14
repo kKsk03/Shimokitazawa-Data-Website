@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject_HideCarGet",
+    "pageId": "湾岸终端机",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tHideCarModelId: () => {\n\t\tif(Select_HideCar.selectedOptionValue === 1)\n\t\t{\n\t\t\treturn storeValue(\"HideCar_IDS\", {\"manufacturer\": \"8\", \"model\": \"82\", \"visualModel\": \"74\"}, false)\n\t\t}\n\t\t\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "湾岸终端机_JSObject_HideCarGet",
+  "deleted": false,
+  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64b0db966fbfd93d5cd4bc25"
+}
