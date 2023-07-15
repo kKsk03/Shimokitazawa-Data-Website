@@ -167,16 +167,16 @@
                       "widgetName": "TableDataMainDraw",
                       "defaultPageSize": 0,
                       "columnOrder": [
+                        "carId",
+                        "level",
                         "rank",
                         "name",
                         "car_level",
                         "car_tune",
                         "result",
                         "car_model",
-                        "carId",
                         "tunePower",
-                        "tuneHandling",
-                        "level"
+                        "tuneHandling"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -197,9 +197,10 @@
                         "rank": 60,
                         "car_tune": 96,
                         "final_result": 190,
-                        "car_level": 60,
+                        "car_level": 72,
                         "level": 60,
-                        "name": 99
+                        "name": 99,
+                        "carId": 60
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -493,7 +494,7 @@
                       "rightColumn": 63,
                       "textSize": "0.875rem",
                       "widgetId": "x584pk4c11",
-                      "tableData": "{{SelectData_MainDraw.data.map(item => ({\n\t...item,\n\tcar_tune: (item.tunePower == \"10\" && item.tuneHandling == \"24\") ? \"600HP/HG\" :\n\t          (item.tunePower == \"11\" && item.tuneHandling == \"23\") ? \"620HP/HG\" :\n\t\t\t  (item.tunePower == \"12\" && item.tuneHandling == \"22\") ? \"640HP/HG\" :\n\t\t\t  (item.tunePower == \"13\" && item.tuneHandling == \"21\") ? \"660HP/G\" :\n\t\t\t  (item.tunePower == \"14\" && item.tuneHandling == \"20\") ? \"680HP/G\" :\n\t\t\t  (item.tunePower == \"15\" && item.tuneHandling == \"19\") ? \"700HP/G\" :\n\t\t\t  (item.tunePower == \"16\" && item.tuneHandling == \"18\") ? \"720HP/B\" :\n\t\t\t  (item.tunePower == \"17\" && item.tuneHandling == \"17\") ? \"740HP/B\" :\n\t\t\t  (item.tunePower == \"18\" && item.tuneHandling == \"16\") ? \"760HP/B\" :\n\t\t\t  (item.tunePower == \"19\" && item.tuneHandling == \"15\") ? \"780HP/D\" :\n\t\t\t  (item.tunePower == \"20\" && item.tuneHandling == \"14\") ? \"800HP/D\" :\n\t\t\t  (item.tunePower == \"21\" && item.tuneHandling == \"13\") ? \"815HP/D\" :\n\t\t\t  (item.tunePower == \"22\" && item.tuneHandling == \"12\") ? \"830HP/DG\" :\n\t\t\t  (item.tunePower == \"23\" && item.tuneHandling == \"11\") ? \"835HP/DG\" :\n\t\t\t  (item.tunePower == \"24\" && item.tuneHandling == \"10\") ? \"840HP/DG\" :\n\t\t\t  \"未满改车辆\",\n\tcar_level: (item.level == \"1\") ? \"N\" :\n\t\t\t   (item.level == \"2\") ? \"C9\" :\n\t\t\t   (item.level == \"3\") ? \"C8\" :\n\t\t\t   (item.level == \"4\") ? \"C7\" :\n\t\t\t   (item.level == \"5\") ? \"C6\" :\n\t\t\t   (item.level == \"6\") ? \"C5\" :\n\t\t\t   (item.level == \"7\") ? \"C4\" :\n\t\t\t   (item.level == \"8\") ? \"C3\" :\n\t\t\t   (item.level == \"9\") ? \"C2\" :\n\t\t\t   (item.level == \"10\") ? \"C1\" :\n\t\t\t   (item.level == \"11\") ? \"B9\" :\n\t\t\t   (item.level == \"12\") ? \"B8\" :\n\t\t\t   (item.level == \"13\") ? \"B7\" :\n\t\t\t   (item.level == \"14\") ? \"B6\" :\n\t\t\t   (item.level == \"15\") ? \"B5\" :\n\t\t\t   (item.level == \"16\") ? \"B4\" :\n\t\t\t   (item.level == \"17\") ? \"B3\" :\n\t\t\t   (item.level == \"18\") ? \"B2\" :\n\t\t\t   (item.level == \"19\") ? \"B1\" :\n\t\t\t   (item.level == \"20\") ? \"A9\" :\n\t\t\t   (item.level == \"21\") ? \"A8\" :\n\t\t\t   (item.level == \"22\") ? \"A7\" :\n\t\t\t   (item.level == \"23\") ? \"A6\" :\n\t\t\t   (item.level == \"24\") ? \"A5\" :\n\t\t\t   (item.level == \"25\") ? \"A4\" :\n\t\t\t   (item.level == \"26\") ? \"A3\" :\n\t\t\t   (item.level == \"27\") ? \"A2\" :\n\t\t\t   (item.level == \"28\") ? \"A1\" :\n\t\t\t   (item.level == \"28\") ? \"S9\" :\n\t\t\t   (item.level == \"30\") ? \"S8\" :\n\t\t\t   (item.level == \"31\") ? \"S7\" :\n\t\t\t   (item.level == \"32\") ? \"S6\" :\n\t\t\t   (item.level == \"33\") ? \"S5\" :\n\t\t\t   (item.level == \"34\") ? \"S4\" :\n\t\t\t   (item.level == \"35\") ? \"S3\" :\n\t\t\t   (item.level == \"36\") ? \"S2\" :\n\t\t\t   (item.level == \"37\") ? \"S1\" :\n\t\t\t   (item.level == \"38\") ? \"SS9\" :\n\t\t\t   (item.level == \"39\") ? \"SS8\" :\n\t\t\t   (item.level == \"40\") ? \"SS7\" :\n\t\t\t   (item.level == \"41\") ? \"SS6\" :\n\t\t\t   (item.level == \"42\") ? \"SS5\" :\n\t\t\t   (item.level == \"43\") ? \"SS4\" :\n\t\t\t   (item.level == \"44\") ? \"SS3\" :\n\t\t\t   (item.level == \"45\") ? \"SS2\" :\n\t\t\t   (item.level == \"46\") ? \"SS1\" :\n\t\t\t   (item.level == \"47\") ? \"SSS9\" :\n\t\t\t   (item.level == \"48\") ? \"SSS8\" :\n\t\t\t   (item.level == \"49\") ? \"SSS7\" :\n\t\t\t   (item.level == \"50\") ? \"SSS6\" :\n\t\t\t   (item.level == \"51\") ? \"SSS5\" :\n\t\t\t   (item.level == \"52\") ? \"SSS4\" :\n\t\t\t   (item.level == \"53\") ? \"SSS3\" :\n\t\t\t   (item.level == \"54\") ? \"SSS2\" :\n\t\t\t   (item.level == \"55\") ? \"SSS1\" :\n\t\t\t   (item.level == \"56\") ? \"SSSS9\" :\n\t\t\t   (item.level == \"57\") ? \"SSSS8\" :\n\t\t\t   (item.level == \"58\") ? \"SSSS7\" :\n\t\t\t   (item.level == \"59\") ? \"SSSS6\" :\n\t\t\t   (item.level == \"60\") ? \"SSSS5\" :\n\t\t\t   (item.level == \"61\") ? \"SSSS4\" :\n\t\t\t   (item.level == \"62\") ? \"SSSS3\" :\n\t\t\t   (item.level == \"63\") ? \"SSSS2\" :\n\t\t\t   (item.level == \"64\") ? \"SSSS1\" :\n\t\t\t   (item.level == \"65\") ? \"SSSSS\" :\n\t\t\t   \"未知等级\"\n}))}}",
+                      "tableData": "{{SelectData_MainDraw.data.map(item => ({\n\t...item,\n\tcar_tune: (item.tunePower == \"10\" && item.tuneHandling == \"24\") ? \"600HP/HG\" :\n\t          (item.tunePower == \"11\" && item.tuneHandling == \"23\") ? \"620HP/HG\" :\n\t\t\t  (item.tunePower == \"12\" && item.tuneHandling == \"22\") ? \"640HP/HG\" :\n\t\t\t  (item.tunePower == \"13\" && item.tuneHandling == \"21\") ? \"660HP/G\" :\n\t\t\t  (item.tunePower == \"14\" && item.tuneHandling == \"20\") ? \"680HP/G\" :\n\t\t\t  (item.tunePower == \"15\" && item.tuneHandling == \"19\") ? \"700HP/G\" :\n\t\t\t  (item.tunePower == \"16\" && item.tuneHandling == \"18\") ? \"720HP/B\" :\n\t\t\t  (item.tunePower == \"17\" && item.tuneHandling == \"17\") ? \"740HP/B\" :\n\t\t\t  (item.tunePower == \"18\" && item.tuneHandling == \"16\") ? \"760HP/B\" :\n\t\t\t  (item.tunePower == \"19\" && item.tuneHandling == \"15\") ? \"780HP/D\" :\n\t\t\t  (item.tunePower == \"20\" && item.tuneHandling == \"14\") ? \"800HP/D\" :\n\t\t\t  (item.tunePower == \"21\" && item.tuneHandling == \"13\") ? \"815HP/D\" :\n\t\t\t  (item.tunePower == \"22\" && item.tuneHandling == \"12\") ? \"830HP/DG\" :\n\t\t\t  (item.tunePower == \"23\" && item.tuneHandling == \"11\") ? \"835HP/DG\" :\n\t\t\t  (item.tunePower == \"24\" && item.tuneHandling == \"10\") ? \"840HP/DG\" :\n\t\t\t  \"未满改车辆\",\n\tcar_level: (item.level == \"1\") ? \"N\" :\n\t\t\t   (item.level == \"2\") ? \"C9\" :\n\t\t\t   (item.level == \"3\") ? \"C8\" :\n\t\t\t   (item.level == \"4\") ? \"C7\" :\n\t\t\t   (item.level == \"5\") ? \"C6\" :\n\t\t\t   (item.level == \"6\") ? \"C5\" :\n\t\t\t   (item.level == \"7\") ? \"C4\" :\n\t\t\t   (item.level == \"8\") ? \"C3\" :\n\t\t\t   (item.level == \"9\") ? \"C2\" :\n\t\t\t   (item.level == \"10\") ? \"C1\" :\n\t\t\t   (item.level == \"11\") ? \"B9\" :\n\t\t\t   (item.level == \"12\") ? \"B8\" :\n\t\t\t   (item.level == \"13\") ? \"B7\" :\n\t\t\t   (item.level == \"14\") ? \"B6\" :\n\t\t\t   (item.level == \"15\") ? \"B5\" :\n\t\t\t   (item.level == \"16\") ? \"B4\" :\n\t\t\t   (item.level == \"17\") ? \"B3\" :\n\t\t\t   (item.level == \"18\") ? \"B2\" :\n\t\t\t   (item.level == \"19\") ? \"B1\" :\n\t\t\t   (item.level == \"20\") ? \"A9\" :\n\t\t\t   (item.level == \"21\") ? \"A8\" :\n\t\t\t   (item.level == \"22\") ? \"A7\" :\n\t\t\t   (item.level == \"23\") ? \"A6\" :\n\t\t\t   (item.level == \"24\") ? \"A5\" :\n\t\t\t   (item.level == \"25\") ? \"A4\" :\n\t\t\t   (item.level == \"26\") ? \"A3\" :\n\t\t\t   (item.level == \"27\") ? \"A2\" :\n\t\t\t   (item.level == \"28\") ? \"A1\" :\n\t\t\t   (item.level == \"29\") ? \"S9\" :\n\t\t\t   (item.level == \"30\") ? \"S8\" :\n\t\t\t   (item.level == \"31\") ? \"S7\" :\n\t\t\t   (item.level == \"32\") ? \"S6\" :\n\t\t\t   (item.level == \"33\") ? \"S5\" :\n\t\t\t   (item.level == \"34\") ? \"S4\" :\n\t\t\t   (item.level == \"35\") ? \"S3\" :\n\t\t\t   (item.level == \"36\") ? \"S2\" :\n\t\t\t   (item.level == \"37\") ? \"S1\" :\n\t\t\t   (item.level == \"38\") ? \"SS9\" :\n\t\t\t   (item.level == \"39\") ? \"SS8\" :\n\t\t\t   (item.level == \"40\") ? \"SS7\" :\n\t\t\t   (item.level == \"41\") ? \"SS6\" :\n\t\t\t   (item.level == \"42\") ? \"SS5\" :\n\t\t\t   (item.level == \"43\") ? \"SS4\" :\n\t\t\t   (item.level == \"44\") ? \"SS3\" :\n\t\t\t   (item.level == \"45\") ? \"SS2\" :\n\t\t\t   (item.level == \"46\") ? \"SS1\" :\n\t\t\t   (item.level == \"47\") ? \"SSS9\" :\n\t\t\t   (item.level == \"48\") ? \"SSS8\" :\n\t\t\t   (item.level == \"49\") ? \"SSS7\" :\n\t\t\t   (item.level == \"50\") ? \"SSS6\" :\n\t\t\t   (item.level == \"51\") ? \"SSS5\" :\n\t\t\t   (item.level == \"52\") ? \"SSS4\" :\n\t\t\t   (item.level == \"53\") ? \"SSS3\" :\n\t\t\t   (item.level == \"54\") ? \"SSS2\" :\n\t\t\t   (item.level == \"55\") ? \"SSS1\" :\n\t\t\t   (item.level == \"56\") ? \"SSSS9\" :\n\t\t\t   (item.level == \"57\") ? \"SSSS8\" :\n\t\t\t   (item.level == \"58\") ? \"SSSS7\" :\n\t\t\t   (item.level == \"59\") ? \"SSSS6\" :\n\t\t\t   (item.level == \"60\") ? \"SSSS5\" :\n\t\t\t   (item.level == \"61\") ? \"SSSS4\" :\n\t\t\t   (item.level == \"62\") ? \"SSSS3\" :\n\t\t\t   (item.level == \"63\") ? \"SSSS2\" :\n\t\t\t   (item.level == \"64\") ? \"SSSS1\" :\n\t\t\t   (item.level == \"65\") ? \"SSSSS\" :\n\t\t\t   \"未知等级\"\n}))}}",
                       "label": "数据",
                       "searchKey": "",
                       "parentId": "7jjvjc84j2",
@@ -579,7 +580,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "",
+                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `2`))(SelectRacingMainDraw.options, SelectRacingMainDraw.serverSideFiltering) }}",
                       "animateLoading": true,
                       "parentColumnSpace": 21.21875,
                       "dynamicTriggerPathList": [],
@@ -590,10 +591,13 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultOptionValue"
                         }
                       ],
                       "labelPosition": "Top",
-                      "options": "[\n  {\n    \"label\": \"第十四届 - 横滨区域\",\n    \"value\": \"1\"\n  }\n]",
+                      "options": "[\n  {\n    \"label\": \"第十四届 - 横滨区域\",\n    \"value\": \"1\"\n  },\n\t{\n    \"label\": \"第二届 - 大阪区域\",\n    \"value\": \"2\"\n  }\n]",
                       "placeholderText": "请选择",
                       "isDisabled": false,
                       "key": "0ye86eg307",
@@ -1316,7 +1320,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "",
+                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `2`))(SelectRacingNoMainDraw.options, SelectRacingNoMainDraw.serverSideFiltering) }}",
                       "animateLoading": true,
                       "parentColumnSpace": 21.21875,
                       "dynamicTriggerPathList": [],
@@ -1327,10 +1331,13 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultOptionValue"
                         }
                       ],
                       "labelPosition": "Top",
-                      "options": "[\n  {\n    \"label\": \"第十四届 - 横滨区域\",\n    \"value\": \"1\"\n  }\n]",
+                      "options": "[\n  {\n    \"label\": \"第十四届 - 横滨区域\",\n    \"value\": \"1\"\n  },\n\t{\n    \"label\": \"第二届 - 大阪区域\",\n    \"value\": \"2\"\n  }\n]",
                       "placeholderText": "请选择",
                       "isDisabled": false,
                       "key": "0ye86eg307",
