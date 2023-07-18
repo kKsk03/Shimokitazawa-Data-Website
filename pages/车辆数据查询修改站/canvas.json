@@ -410,11 +410,14 @@
                                 },
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "isDisabled"
                                 }
                               ],
                               "labelStyle": "BOLD",
                               "inputType": "TEXT",
-                              "isDisabled": false,
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
                               "validation": "",
                               "isRequired": false,
                               "dynamicHeight": "FIXED",
@@ -426,6 +429,11 @@
                               "regex": "^([1-9]||[1-3][0-9]||40)$",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "widgetName": "InputCustomColor",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
                               "displayName": "输入框",
                               "searchTags": [
                                 "form",
@@ -479,7 +487,7 @@
                               ],
                               "labelStyle": "BOLD",
                               "inputType": "TEXT",
-                              "isDisabled": false,
+                              "isDisabled": true,
                               "validation": "",
                               "isRequired": false,
                               "dynamicHeight": "FIXED",
@@ -540,11 +548,14 @@
                                 },
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "isDisabled"
                                 }
                               ],
                               "labelStyle": "BOLD",
                               "inputType": "TEXT",
-                              "isDisabled": false,
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
                               "validation": "",
                               "isRequired": false,
                               "dynamicHeight": "FIXED",
@@ -556,6 +567,11 @@
                               "regex": "^([0-9][0-9]{0,3}|9999)$",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "widgetName": "InputPlateNumber",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
                               "displayName": "输入框",
                               "searchTags": [
                                 "form",
@@ -588,26 +604,12 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "InputRgTropy",
-                              "displayName": "输入框",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
                               "topRow": 20,
-                              "bottomRow": 24,
                               "tooltip": "可自主修改上限为200个",
-                              "parentRowSpace": 10,
                               "labelWidth": "9",
-                              "autoFocus": false,
                               "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
                               "animateLoading": true,
-                              "parentColumnSpace": 13.4921875,
-                              "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
@@ -619,31 +621,53 @@
                                 },
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "isDisabled"
                                 }
                               ],
-                              "labelPosition": "Left",
                               "labelStyle": "BOLD",
                               "inputType": "TEXT",
-                              "isDisabled": false,
-                              "key": "x0ufohv2tq",
-                              "labelTextSize": "1rem",
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
                               "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 29,
                               "dynamicHeight": "FIXED",
                               "iconName": "follower",
-                              "widgetId": "nf91zf3vd1",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "errorMessage": "最大允许修改200个奖杯",
                               "isVisible": true,
-                              "label": "化身奖杯数量",
                               "version": 2,
-                              "parentId": "r08azp1bju",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
                               "isLoading": false,
                               "regex": "^([1-2]||[0-9][0-9]||200)$",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "widgetName": "InputRgTropy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "displayName": "输入框",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "bottomRow": 24,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "hideCard": false,
+                              "parentColumnSpace": 13.4921875,
+                              "dynamicTriggerPathList": [],
+                              "labelPosition": "Left",
+                              "key": "x0ufohv2tq",
+                              "labelTextSize": "1rem",
+                              "isDeprecated": false,
+                              "rightColumn": 29,
+                              "widgetId": "nf91zf3vd1",
+                              "errorMessage": "最大允许修改200个奖杯",
+                              "label": "化身奖杯数量",
+                              "parentId": "r08azp1bju",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
                               "maxDynamicHeight": 9000,
                               "isSpellCheck": false,
                               "iconAlign": "left",
@@ -653,6 +677,11 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "InputTitle",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
                               "displayName": "输入框",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -683,12 +712,15 @@
                                 },
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "isDisabled"
                                 }
                               ],
                               "labelPosition": "Left",
                               "labelStyle": "BOLD",
                               "inputType": "TEXT",
-                              "isDisabled": false,
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
                               "key": "x0ufohv2tq",
                               "labelTextSize": "1rem",
                               "isRequired": false,
@@ -716,6 +748,11 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "InputOdometer",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
                               "displayName": "输入框",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -745,12 +782,15 @@
                                 },
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "isDisabled"
                                 }
                               ],
                               "labelPosition": "Left",
                               "labelStyle": "BOLD",
                               "inputType": "TEXT",
-                              "isDisabled": false,
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
                               "key": "x0ufohv2tq",
                               "labelTextSize": "1rem",
                               "isRequired": false,
@@ -795,11 +835,14 @@
                                 },
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "isDisabled"
                                 }
                               ],
                               "labelStyle": "BOLD",
                               "inputType": "TEXT",
-                              "isDisabled": false,
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
                               "validation": "",
                               "isRequired": false,
                               "dynamicHeight": "FIXED",
@@ -811,6 +854,11 @@
                               "regex": "^([1-9]||[1-3][0-9]||25)$",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "widgetName": "InputLevel",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
                               "displayName": "输入框",
                               "searchTags": [
                                 "form",
@@ -844,6 +892,11 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "InputName",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
                               "displayName": "输入框",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -874,12 +927,15 @@
                                 },
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "isDisabled"
                                 }
                               ],
                               "labelPosition": "Left",
                               "labelStyle": "BOLD",
                               "inputType": "TEXT",
-                              "isDisabled": false,
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
                               "key": "x0ufohv2tq",
                               "labelTextSize": "1rem",
                               "isRequired": false,
@@ -908,6 +964,11 @@
                               "boxShadow": "none",
                               "widgetName": "SelectRegionId",
                               "isFilterable": false,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
                               "displayName": "下拉单选",
                               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                               "labelText": "车辆登记区域",
@@ -937,6 +998,9 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "isDisabled"
                                 }
                               ],
                               "labelPosition": "Left",
@@ -944,7 +1008,7 @@
                               "options": "[\n  {\n    \"label\": \"北海道\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"青森\",\n    \"value\": \"2\"\n  },\n  {\n    \"label\": \"岩手\",\n    \"value\": \"3\"\n  },\n\t{\n    \"label\": \"宮城\",\n    \"value\": \"4\"\n  },\n\t{\n    \"label\": \"秋田\",\n    \"value\": \"5\"\n  },\n\t{\n    \"label\": \"山形\",\n    \"value\": \"6\"\n  },\n\t{\n    \"label\": \"福島\",\n    \"value\": \"7\"\n  },\n\t{\n    \"label\": \"茨城\",\n    \"value\": \"8\"\n  },\n\t{\n    \"label\": \"栃木\",\n    \"value\": \"9\"\n  },\n\t{\n    \"label\": \"群馬\",\n    \"value\": \"10\"\n  },\n  {\n    \"label\": \"埼玉\",\n    \"value\": \"11\"\n  },\n  {\n    \"label\": \"千葉\",\n    \"value\": \"12\"\n  },\n  {\n    \"label\": \"東京\",\n    \"value\": \"13\"\n  },\n\t{\n    \"label\": \"神奈川\",\n    \"value\": \"14\"\n  },\n\t{\n    \"label\": \"新潟\",\n    \"value\": \"15\"\n  },\n\t{\n    \"label\": \"富山\",\n    \"value\": \"16\"\n  },\n\t{\n    \"label\": \"石川\",\n    \"value\": \"17\"\n  },\n\t{\n    \"label\": \"福井\",\n    \"value\": \"18\"\n  },\n\t{\n    \"label\": \"山梨\",\n    \"value\": \"19\"\n  },\n\t{\n    \"label\": \"長野\",\n    \"value\": \"20\"\n  },\n  {\n    \"label\": \"岐阜\",\n    \"value\": \"21\"\n  },\n  {\n    \"label\": \"静岡\",\n    \"value\": \"22\"\n  },\n  {\n    \"label\": \"愛知\",\n    \"value\": \"23\"\n  },\n\t{\n    \"label\": \"三重\",\n    \"value\": \"24\"\n  },\n\t{\n    \"label\": \"滋賀\",\n    \"value\": \"25\"\n  },\n\t{\n    \"label\": \"京都\",\n    \"value\": \"26\"\n  },\n\t{\n    \"label\": \"大阪\",\n    \"value\": \"27\"\n  },\n\t{\n    \"label\": \"兵庫\",\n    \"value\": \"28\"\n  },\n\t{\n    \"label\": \"奈良\",\n    \"value\": \"29\"\n  },\n\t{\n    \"label\": \"和歌山\",\n    \"value\": \"30\"\n  },\n  {\n    \"label\": \"鳥取\",\n    \"value\": \"31\"\n  },\n  {\n    \"label\": \"島根\",\n    \"value\": \"32\"\n  },\n  {\n    \"label\": \"岡山\",\n    \"value\": \"33\"\n  },\n\t{\n    \"label\": \"広島\",\n    \"value\": \"34\"\n  },\n\t{\n    \"label\": \"山口\",\n    \"value\": \"35\"\n  },\n\t{\n    \"label\": \"徳島\",\n    \"value\": \"36\"\n  },\n\t{\n    \"label\": \"香川\",\n    \"value\": \"37\"\n  },\n\t{\n    \"label\": \"愛媛\",\n    \"value\": \"38\"\n  },\n\t{\n    \"label\": \"高知\",\n    \"value\": \"39\"\n  },\n\t{\n    \"label\": \"福岡\",\n    \"value\": \"40\"\n  },\n  {\n    \"label\": \"佐賀\",\n    \"value\": \"41\"\n  },\n  {\n    \"label\": \"長崎\",\n    \"value\": \"42\"\n  },\n  {\n    \"label\": \"熊本\",\n    \"value\": \"43\"\n  },\n\t{\n    \"label\": \"大分\",\n    \"value\": \"44\"\n  },\n\t{\n    \"label\": \"宮崎\",\n    \"value\": \"45\"\n  },\n\t{\n    \"label\": \"鹿児島\",\n    \"value\": \"46\"\n  },\n\t{\n    \"label\": \"沖縄\",\n    \"value\": \"47\"\n  }\n]",
                               "labelStyle": "BOLD",
                               "placeholderText": "请选择",
-                              "isDisabled": false,
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
                               "key": "5ckjygioif",
                               "labelTextSize": "1rem",
                               "isRequired": false,
@@ -1012,7 +1076,7 @@
                                 "字符"
                               ],
                               "topRow": 14,
-                              "bottomRow": 18,
+                              "bottomRow": 34,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -1131,8 +1195,8 @@
                                 "submit",
                                 "button"
                               ],
-                              "topRow": 37,
-                              "bottomRow": 41,
+                              "topRow": 53,
+                              "bottomRow": 57,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
@@ -1189,7 +1253,7 @@
                                 "字符"
                               ],
                               "topRow": 40,
-                              "bottomRow": 44,
+                              "bottomRow": 48,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -2639,6 +2703,7 @@
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
+                      "shouldScrollContents": true,
                       "animateLoading": true,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
@@ -2664,11 +2729,71 @@
                       "text": "{{Select_Car_Detail.data[0].regionId}}",
                       "key": "6chikforal",
                       "isDeprecated": false,
-                      "rightColumn": 58,
+                      "rightColumn": 45,
                       "textAlign": "LEFT",
                       "dynamicHeight": "FIXED",
                       "widgetId": "zgfgnanum4",
                       "isVisible": false,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "5oia32r03a",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "1rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "widgetName": "Text20",
+                      "displayName": "文本",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label",
+                        "text",
+                        "文字",
+                        "标题",
+                        "段落",
+                        "字符"
+                      ],
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 14.1875,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 45,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "当前车辆的carId: {{SelectCarId.selectedOptionValue}}",
+                      "key": "sfyd2quntd",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "u5wrgskyqt",
+                      "isVisible": true,
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
                       "version": 1,
@@ -3600,7 +3725,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": true
+    "isHidden": false
   },
   "deleted": false,
   "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_649ad8a36fbfd93d5cd473ba"
