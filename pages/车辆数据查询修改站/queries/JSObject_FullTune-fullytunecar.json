@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return storeValue(\"Fully\", {\n    \"tunePower\": \"17\",\n    \"tuneHandling\": \"17\",\n    \"level\": \"8\",\n    \"Number\": \"80\",\n    \"Div\": \"4\"\n  }, false);\n}",
+      "body": "() => {\n  let Cheat = 0;\n  const CurrentTunePower = Select_Car_Detail.data[0].tunePower;\n  const CurrentTuneHandling = Select_Car_Detail.data[0].tuneHandling;\n  if (CurrentTunePower + CurrentTuneHandling === 34) {\n    Cheat = 1;\n  }\n  if (Cheat === 0) {\n    return storeValue(\"Fully\", {\n      \"tunePower\": \"17\",\n      \"tuneHandling\": \"17\",\n      \"level\": \"8\",\n      \"Number\": \"80\",\n      \"Div\": \"4\"\n    }, false);\n  } else {\n    showAlert('检测到违规使用满改功能，已取消执行', 'error');\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return storeValue(\"Fully\", {\n    \"tunePower\": \"17\",\n    \"tuneHandling\": \"17\",\n    \"level\": \"8\",\n    \"Number\": \"80\",\n    \"Div\": \"4\"\n  }, false);\n}"
+      "() => {\n  let Cheat = 0;\n  const CurrentTunePower = Select_Car_Detail.data[0].tunePower;\n  const CurrentTuneHandling = Select_Car_Detail.data[0].tuneHandling;\n  if (CurrentTunePower + CurrentTuneHandling === 34) {\n    Cheat = 1;\n  }\n  if (Cheat === 0) {\n    return storeValue(\"Fully\", {\n      \"tunePower\": \"17\",\n      \"tuneHandling\": \"17\",\n      \"level\": \"8\",\n      \"Number\": \"80\",\n      \"Div\": \"4\"\n    }, false);\n  } else {\n    showAlert('检测到违规使用满改功能，已取消执行', 'error');\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

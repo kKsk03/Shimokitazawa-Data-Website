@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tfullytunecar: () => {\n\t\treturn storeValue(\"Fully\", {\"tunePower\": \"17\", \"tuneHandling\": \"17\", \"level\": \"8\", \"Number\": \"80\", \"Div\": \"4\", }, false);\n\t}\n}",
+    "body": "export default {\n\tfullytunecar: () => {\n\t\t// 检测是否作弊\n\t\tlet Cheat = 0;\n\t\tconst CurrentTunePower = Select_Car_Detail.data[0].tunePower;\n\t\tconst CurrentTuneHandling = Select_Car_Detail.data[0].tuneHandling;\n\t\tif(CurrentTunePower + CurrentTuneHandling === 34)\n\t\t{\n\t\t\tCheat = 1;\n\t\t}\n\n\t\tif(Cheat === 0)\n\t\t{\n\t\t\treturn storeValue(\"Fully\", {\"tunePower\": \"17\", \"tuneHandling\": \"17\", \"level\": \"8\", \"Number\": \"80\", \"Div\": \"4\", }, false);\n\t\t}\n\t\telse\n\t\t{\n\t\t\tshowAlert('检测到违规使用满改功能，已取消执行', 'error');\n\t\t}\n\t}\n}",
     "variables": [],
     "userPermissions": []
   },
