@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObjectUpdate_Car",
+    "pageId": "车辆数据查询修改站",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tUpdate_Car: () => {\n\t\tUpdate_Car_Data.run(); //上传\n\t\tSelect_Car_Detail.run(); //重新获取\n\t\tshowAlert('修改成功', 'success');\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "车辆数据查询修改站_JSObjectUpdate_Car",
+  "deleted": false,
+  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64b7d5ff6fbfd93d5cd4cce8"
+}

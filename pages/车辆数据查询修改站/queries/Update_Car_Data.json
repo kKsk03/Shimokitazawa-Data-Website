@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE public.\"Car\"\nSET\n\tname = {{InputName.text}},\n\t\"customColor\" = {{InputCustomColor.text}},\n\t\"defaultColor\" = {{InputDefaultColor.text}},\n\t\"wheel\" = {{Select_Wheel.selectedOptionValue}},\n\t\"plateNumber\" = {{InputPlateNumber.text}},\n\ttitle = {{InputTitle.text}},\n\tlevel = {{InputLevel.text}},\n\t\"regionId\" ={{SelectRegionId.selectedOptionValue}},\n\todometer = {{InputOdometer.text}},\n\t\"rgTrophy\" = {{InputRgTropy.text}}\nWHERE \"carId\" = {{SelectCarId.selectedOptionValue}};\nSELECT pg_sleep(3);\n",
+      "body": "UPDATE public.\"Car\"\nSET\n\tname = {{InputName.text}},\n\t\"customColor\" = {{InputCustomColor.text}},\n\t\"defaultColor\" = {{InputDefaultColor.text}},\n\t\"wheel\" = {{Select_Wheel.selectedOptionValue}},\n\t\"plateNumber\" = {{InputPlateNumber.text}},\n\ttitle = {{InputTitle.text}},\n\tlevel = {{InputLevel.text}},\n\t\"regionId\" ={{SelectRegionId.selectedOptionValue}},\n\todometer = {{InputOdometer.text}},\n\t\"rgTrophy\" = {{InputRgTropy.text}}\nWHERE \"carId\" = {{SelectCarId.selectedOptionValue}};\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

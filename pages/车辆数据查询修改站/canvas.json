@@ -211,7 +211,7 @@
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
-              "shouldScrollContents": false,
+              "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 19.8125,
               "dynamicTriggerPathList": [],
@@ -1181,7 +1181,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "ButtonEditBasic",
-                              "onClick": "{{Update_Car_Data.run(() => showAlert('修改成功','success'), () => {})}}",
+                              "onClick": "{{JSObjectUpdate_Car.Update_Car()}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [
                                 {
@@ -1231,10 +1231,10 @@
                               "parentId": "r08azp1bju",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 63,
+                              "originalTopRow": 57,
                               "disabledWhenInvalid": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "originalBottomRow": 67,
+                              "originalBottomRow": 61,
                               "buttonVariant": "PRIMARY",
                               "placement": "CENTER"
                             },
@@ -1476,7 +1476,7 @@
                               ],
                               "labelPosition": "Left",
                               "labelTooltip": "目前车辆装载的轮毂型号\n无改装配件车辆也可以使用本选项",
-                              "options": "[\n  {\n    \"label\": \"Yokohama Advan Racnig RCIII\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"Yokohama Advan Racing TCIII\",\n    \"value\": \"2\"\n  },\n  {\n    \"label\": \"Yokohama Super Advan Racing ver.2\",\n    \"value\": \"3\"\n  },\n  {\n    \"label\": \"Yokohama Advan Racing RG-D2\",\n    \"value\": \"4\"\n  },\n  {\n    \"label\": \"Yokohama Advan Racnig RGIII\",\n    \"value\": \"5\"\n  },\n  {\n    \"label\": \"Yokohama Advan Racing RSII\",\n    \"value\": \"6\"\n  },\n  {\n    \"label\": \"Yokohama Advan Racing RS-D\",\n    \"value\": \"7\"\n  },\n  {\n    \"label\": \"Yokohama Model T6\",\n    \"value\": \"8\"\n  },\n  {\n    \"label\": \"Yokohama Advan GT\",\n    \"value\": \"9\"\n  },\n  {\n    \"label\": \"Watanabe Eight Spoke\",\n    \"value\": \"11\"\n  },\n  {\n    \"label\": \"Watanabe Forged Mg Cyclone\",\n    \"value\": \"12\"\n  },\n  {\n    \"label\": \"Watanabe Stellar\",\n    \"value\": \"13\"\n  },\n  {\n    \"label\": \"Watanabe GR-8\",\n    \"value\": \"14\"\n  },\n  {\n    \"label\": \"Watanabe NEW RS-8\",\n    \"value\": \"15\"\n  },\n  {\n    \"label\": \"Rays VR CE28N\",\n    \"value\": \"16\"\n  },\n  {\n    \"label\": \"Rays Gram Lights 57ANA\",\n    \"value\": \"17\"\n  },\n  {\n    \"label\": \"Rays Lucianna Stratagia\",\n    \"value\": \"18\"\n  },\n  {\n    \"label\": \"Rays Gram Lights 57D\",\n    \"value\": \"19\"\n  },\n  {\n    \"label\": \"Rays VR TE37 Saga\",\n    \"value\": \"20\"\n  },\n  {\n    \"label\": \"Rays VR TE037 DURR\",\n    \"value\": \"21\"\n  },\n  {\n    \"label\": \"Rays VR GT-TypeM\",\n    \"value\": \"22\"\n  },\n  {\n    \"label\": \"Rays GA?BANA\",\n    \"value\": \"23\"\n  },\n  {\n    \"label\": \"Rays VR RE30\",\n    \"value\": \"24\"\n  },\n  {\n    \"label\": \"Rays VR ZE40\",\n    \"value\": \"27\"\n  },\n  {\n    \"label\": \"Enkei Performance Line PFM1\",\n    \"value\": \"28\"\n  },\n  {\n    \"label\": \"Enkei Racing RPF1\",\n    \"value\": \"29\"\n  },\n  {\n    \"label\": \"Enkei Racing Revolution NT03RR\",\n    \"value\": \"30\"\n  },\n  {\n    \"label\": \"Enkei WPS JL01\",\n    \"value\": \"31\"\n  },\n  {\n    \"label\": \"Enkei RS05\",\n    \"value\": \"32\"\n  },\n  {\n    \"label\": \"Enkei JS+M\",\n    \"value\": \"33\"\n  },\n  {\n    \"label\": \"Enkei Performance Line PF07\",\n    \"value\": \"34\"\n  },\n  {\n    \"label\": \"OZ Crono-3\",\n    \"value\": \"37\"\n  },\n  {\n    \"label\": \"OZ Rally Racing\",\n    \"value\": \"38\"\n  },\n  {\n    \"label\": \"OZ ForgiataGT\",\n    \"value\": \"39\"\n  },\n  {\n    \"label\": \"OZ Leggenda\",\n    \"value\": \"40\"\n  },\n  {\n    \"label\": \"OZ Superturismo-LM\",\n    \"value\": \"41\"\n  },\n  {\n    \"label\": \"OZ Formula-HLT\",\n    \"value\": \"42\"\n  },\n  {\n    \"label\": \"OZ ZEUS HLT FORGED\",\n    \"value\": \"43\"\n  },\n  {\n    \"label\": \"BBS RI-D\",\n    \"value\": \"47\"\n  },\n  {\n    \"label\": \"BBS RI-A\",\n    \"value\": \"48\"\n  },\n  {\n    \"label\": \"BBS FS\",\n    \"value\": \"49\"\n  },\n  {\n    \"label\": \"BBS RG-R\",\n    \"value\": \"50\"\n  },\n  {\n    \"label\": \"BBS Super-RS\",\n    \"value\": \"51\"\n  },\n  {\n    \"label\": \"BBS LM\",\n    \"value\": \"53\"\n  },\n  {\n    \"label\": \"BBS FZ-MG\",\n    \"value\": \"54\"\n  }\n]",
+                              "options": "[\n\t{\n    \"label\": \"原厂轮毂\",\n    \"value\": \"0\"\n  },\n  {\n    \"label\": \"Yokohama Advan Racnig RCIII\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"Yokohama Advan Racing TCIII\",\n    \"value\": \"2\"\n  },\n  {\n    \"label\": \"Yokohama Super Advan Racing ver.2\",\n    \"value\": \"3\"\n  },\n  {\n    \"label\": \"Yokohama Advan Racing RG-D2\",\n    \"value\": \"4\"\n  },\n  {\n    \"label\": \"Yokohama Advan Racnig RGIII\",\n    \"value\": \"5\"\n  },\n  {\n    \"label\": \"Yokohama Advan Racing RSII\",\n    \"value\": \"6\"\n  },\n  {\n    \"label\": \"Yokohama Advan Racing RS-D\",\n    \"value\": \"7\"\n  },\n  {\n    \"label\": \"Yokohama Model T6\",\n    \"value\": \"8\"\n  },\n  {\n    \"label\": \"Yokohama Advan GT\",\n    \"value\": \"9\"\n  },\n  {\n    \"label\": \"Watanabe Eight Spoke\",\n    \"value\": \"11\"\n  },\n  {\n    \"label\": \"Watanabe Forged Mg Cyclone\",\n    \"value\": \"12\"\n  },\n  {\n    \"label\": \"Watanabe Stellar\",\n    \"value\": \"13\"\n  },\n  {\n    \"label\": \"Watanabe GR-8\",\n    \"value\": \"14\"\n  },\n  {\n    \"label\": \"Watanabe NEW RS-8\",\n    \"value\": \"15\"\n  },\n  {\n    \"label\": \"Rays VR CE28N\",\n    \"value\": \"16\"\n  },\n  {\n    \"label\": \"Rays Gram Lights 57ANA\",\n    \"value\": \"17\"\n  },\n  {\n    \"label\": \"Rays Lucianna Stratagia\",\n    \"value\": \"18\"\n  },\n  {\n    \"label\": \"Rays Gram Lights 57D\",\n    \"value\": \"19\"\n  },\n  {\n    \"label\": \"Rays VR TE37 Saga\",\n    \"value\": \"20\"\n  },\n  {\n    \"label\": \"Rays VR TE037 DURR\",\n    \"value\": \"21\"\n  },\n  {\n    \"label\": \"Rays VR GT-TypeM\",\n    \"value\": \"22\"\n  },\n  {\n    \"label\": \"Rays GA?BANA\",\n    \"value\": \"23\"\n  },\n  {\n    \"label\": \"Rays VR RE30\",\n    \"value\": \"24\"\n  },\n  {\n    \"label\": \"Rays VR ZE40\",\n    \"value\": \"27\"\n  },\n  {\n    \"label\": \"Enkei Performance Line PFM1\",\n    \"value\": \"28\"\n  },\n  {\n    \"label\": \"Enkei Racing RPF1\",\n    \"value\": \"29\"\n  },\n  {\n    \"label\": \"Enkei Racing Revolution NT03RR\",\n    \"value\": \"30\"\n  },\n  {\n    \"label\": \"Enkei WPS JL01\",\n    \"value\": \"31\"\n  },\n  {\n    \"label\": \"Enkei RS05\",\n    \"value\": \"32\"\n  },\n  {\n    \"label\": \"Enkei JS+M\",\n    \"value\": \"33\"\n  },\n  {\n    \"label\": \"Enkei Performance Line PF07\",\n    \"value\": \"34\"\n  },\n  {\n    \"label\": \"OZ Crono-3\",\n    \"value\": \"37\"\n  },\n  {\n    \"label\": \"OZ Rally Racing\",\n    \"value\": \"38\"\n  },\n  {\n    \"label\": \"OZ ForgiataGT\",\n    \"value\": \"39\"\n  },\n  {\n    \"label\": \"OZ Leggenda\",\n    \"value\": \"40\"\n  },\n  {\n    \"label\": \"OZ Superturismo-LM\",\n    \"value\": \"41\"\n  },\n  {\n    \"label\": \"OZ Formula-HLT\",\n    \"value\": \"42\"\n  },\n  {\n    \"label\": \"OZ ZEUS HLT FORGED\",\n    \"value\": \"43\"\n  },\n  {\n    \"label\": \"BBS RI-D\",\n    \"value\": \"47\"\n  },\n  {\n    \"label\": \"BBS RI-A\",\n    \"value\": \"48\"\n  },\n  {\n    \"label\": \"BBS FS\",\n    \"value\": \"49\"\n  },\n  {\n    \"label\": \"BBS RG-R\",\n    \"value\": \"50\"\n  },\n  {\n    \"label\": \"BBS Super-RS\",\n    \"value\": \"51\"\n  },\n  {\n    \"label\": \"BBS LM\",\n    \"value\": \"53\"\n  },\n  {\n    \"label\": \"BBS FZ-MG\",\n    \"value\": \"54\"\n  }\n]",
                               "labelStyle": "BOLD",
                               "placeholderText": "请选择",
                               "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
@@ -1555,10 +1555,10 @@
                               "parentId": "r08azp1bju",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 64,
+                              "originalTopRow": 57,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 68,
+                              "originalBottomRow": 61,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             }
@@ -2992,7 +2992,7 @@
               "detachFromLayout": true,
               "dynamicHeight": "FIXED",
               "widgetId": "uperyxpg65",
-              "canOutsideClickClose": true,
+              "canOutsideClickClose": false,
               "canEscapeKeyClose": true,
               "version": 2,
               "parentId": "0",
@@ -3843,7 +3843,7 @@
                       "originalTopRow": 5,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 16,
+                      "originalBottomRow": 18,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }

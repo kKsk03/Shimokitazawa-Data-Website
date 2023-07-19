@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1720,
+          "bottomRow": 1730,
           "containerStyle": "none",
           "snapRows": 88,
           "parentRowSpace": 1,
@@ -780,7 +780,7 @@
                 "container"
               ],
               "topRow": 89,
-              "bottomRow": 164,
+              "bottomRow": 165,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -807,7 +807,7 @@
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
                   "hideCard": true,
-                  "minHeight": 750,
+                  "minHeight": 760,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
@@ -930,7 +930,7 @@
                         "datagrid",
                         "table"
                       ],
-                      "bottomRow": 71,
+                      "bottomRow": 69,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
