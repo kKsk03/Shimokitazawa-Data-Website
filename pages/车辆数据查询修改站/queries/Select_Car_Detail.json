@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \"carId\", name, \"customColor\", \"defaultColor\", \"plateNumber\", title, level, \"regionId\", odometer, \"rgTrophy\", \"stClearCount\", \"tunePower\", \"tuneHandling\"\n\tFROM public.\"Car\" \n\tWHERE \"carId\" = {{SelectCarId.selectedOptionValue}};\nSELECT pg_sleep(3);",
+      "body": "SELECT \"carId\", name, \"customColor\", \"defaultColor\", \"wheel\", \"plateNumber\", title, level, \"regionId\", odometer, \"rgTrophy\", \"stClearCount\", \"tunePower\", \"tuneHandling\"\n\tFROM public.\"Car\" \n\tWHERE \"carId\" = {{SelectCarId.selectedOptionValue}};\nSELECT pg_sleep(3);",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
