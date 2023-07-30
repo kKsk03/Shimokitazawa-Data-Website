@@ -123,7 +123,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "车辆数据查询&修改站 Ver1.6",
+              "text": "车辆数据查询&修改站 Ver1.7",
               "key": "t7vmm8l2gv",
               "isDeprecated": false,
               "rightColumn": 63,
@@ -676,31 +676,12 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "InputTitle",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "isDisabled"
-                                }
-                              ],
-                              "displayName": "输入框",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
                               "topRow": 15,
-                              "bottomRow": 19,
                               "tooltip": "",
-                              "parentRowSpace": 10,
                               "labelWidth": "3",
-                              "autoFocus": false,
                               "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
                               "animateLoading": true,
-                              "parentColumnSpace": 13.4921875,
-                              "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
@@ -717,28 +698,48 @@
                                   "key": "isDisabled"
                                 }
                               ],
-                              "labelPosition": "Left",
                               "labelStyle": "BOLD",
                               "inputType": "TEXT",
                               "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
-                              "key": "x0ufohv2tq",
-                              "labelTextSize": "1rem",
                               "isRequired": true,
-                              "isDeprecated": false,
-                              "rightColumn": 29,
                               "dynamicHeight": "FIXED",
                               "iconName": "follower",
-                              "widgetId": "16wgymhoho",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
-                              "label": "称号",
                               "version": 2,
+                              "isLoading": false,
+                              "regex": "^.{1,8}$",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "widgetName": "InputTitle",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "displayName": "输入框",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "bottomRow": 19,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "hideCard": false,
+                              "parentColumnSpace": 13.4921875,
+                              "dynamicTriggerPathList": [],
+                              "labelPosition": "Left",
+                              "key": "x0ufohv2tq",
+                              "labelTextSize": "1rem",
+                              "isDeprecated": false,
+                              "rightColumn": 29,
+                              "widgetId": "16wgymhoho",
+                              "errorMessage": "您的车辆称号，最长8位",
+                              "label": "称号",
                               "parentId": "r08azp1bju",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "regex": "^([ぁ-んァ-ン！：／]||[一-龯]||[A-z]||[０-９]){1,9}$",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
                               "isSpellCheck": false,
                               "iconAlign": "left",
@@ -891,31 +892,12 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "InputName",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "isDisabled"
-                                }
-                              ],
-                              "displayName": "输入框",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
                               "topRow": 0,
-                              "bottomRow": 4,
-                              "tooltip": "您的车辆名称，必须使用全角输入，不知道什么叫全角输入的请百度",
-                              "parentRowSpace": 10,
+                              "tooltip": "您的车辆名称，必须使用全角输入，最长5位",
                               "labelWidth": "4",
-                              "autoFocus": false,
                               "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
                               "animateLoading": true,
-                              "parentColumnSpace": 13.4921875,
-                              "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
@@ -932,28 +914,48 @@
                                   "key": "isDisabled"
                                 }
                               ],
-                              "labelPosition": "Left",
                               "labelStyle": "BOLD",
                               "inputType": "TEXT",
                               "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
-                              "key": "x0ufohv2tq",
-                              "labelTextSize": "1rem",
                               "isRequired": true,
-                              "isDeprecated": false,
-                              "rightColumn": 29,
                               "dynamicHeight": "FIXED",
                               "iconName": "crown",
-                              "widgetId": "ujnwg56gxy",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
-                              "label": "名称",
                               "version": 2,
-                              "parentId": "r08azp1bju",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
                               "isLoading": false,
                               "regex": "^([ぁ-んァ-ン！：＠★・／]||[ァ-ン]||[Ａ-ｚ]||[０-９]){1,5}$",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "widgetName": "InputName",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "displayName": "输入框",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "hideCard": false,
+                              "parentColumnSpace": 13.4921875,
+                              "dynamicTriggerPathList": [],
+                              "labelPosition": "Left",
+                              "key": "x0ufohv2tq",
+                              "labelTextSize": "1rem",
+                              "isDeprecated": false,
+                              "rightColumn": 29,
+                              "widgetId": "ujnwg56gxy",
+                              "errorMessage": "请检查您是否使用了全角输入",
+                              "label": "名称",
+                              "parentId": "r08azp1bju",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
                               "maxDynamicHeight": 9000,
                               "isSpellCheck": false,
                               "iconAlign": "left",
@@ -1116,7 +1118,7 @@
                               "originalTopRow": 14,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 34,
+                              "originalBottomRow": 18,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -1231,10 +1233,10 @@
                               "parentId": "r08azp1bju",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 57,
+                              "originalTopRow": 41,
                               "disabledWhenInvalid": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "originalBottomRow": 61,
+                              "originalBottomRow": 45,
                               "buttonVariant": "PRIMARY",
                               "placement": "CENTER"
                             },
@@ -1293,7 +1295,7 @@
                               "originalTopRow": 39,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 47,
+                              "originalBottomRow": 43,
                               "fontSize": "0.875rem",
                               "minDynamicHeight": 4
                             },
@@ -1429,8 +1431,8 @@
                               "parentId": "r08azp1bju",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 47,
-                              "originalBottomRow": 51
+                              "originalTopRow": 43,
+                              "originalBottomRow": 47
                             },
                             {
                               "boxShadow": "none",
@@ -1494,10 +1496,10 @@
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 52,
+                              "originalTopRow": 48,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 56,
+                              "originalBottomRow": 52,
                               "minDynamicHeight": 4
                             },
                             {
@@ -1555,10 +1557,10 @@
                               "parentId": "r08azp1bju",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 57,
+                              "originalTopRow": 53,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 61,
+                              "originalBottomRow": 57,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             }
@@ -3803,7 +3805,7 @@
                         "字符"
                       ],
                       "topRow": 5,
-                      "bottomRow": 20,
+                      "bottomRow": 22,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -3826,7 +3828,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "- Ver1.6 强制检测输入状态\n- Ver1.5 新增车辆轮毂修改\n- Ver1.4 修复禁用部分bug\n- Ver1.3 新增一键满改功能\n- Ver1.2 增加更多注释\n- Ver1.1 修复部分显示问题\n- Ver1.0 全新网站启用",
+                      "text": "- Ver1.7 修复名称与称号无法检测\n- Ver1.6 强制检测输入状态\n- Ver1.5 新增车辆轮毂修改\n- Ver1.4 修复禁用部分bug\n- Ver1.3 新增一键满改功能\n- Ver1.2 增加更多注释\n- Ver1.1 修复部分显示问题\n- Ver1.0 全新网站启用",
                       "key": "jwaf1crrzh",
                       "isDeprecated": false,
                       "rightColumn": 61,
@@ -3843,7 +3845,7 @@
                       "originalTopRow": 5,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 18,
+                      "originalBottomRow": 20,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }
