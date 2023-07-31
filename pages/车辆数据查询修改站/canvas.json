@@ -123,7 +123,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "车辆数据查询&修改站 Ver1.7",
+              "text": "车辆数据查询&修改站 Ver1.8",
               "key": "t7vmm8l2gv",
               "isDeprecated": false,
               "rightColumn": 63,
@@ -395,7 +395,7 @@
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "topRow": 5,
-                              "tooltip": "这是车检色，不是原厂颜色",
+                              "tooltip": "车检色",
                               "labelWidth": "10",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -468,7 +468,7 @@
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "topRow": 0,
-                              "tooltip": "这是出厂的颜色，不是车检色",
+                              "tooltip": "由于太多人修改错误，当前不可用",
                               "labelWidth": "9",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -748,6 +748,40 @@
                             },
                             {
                               "boxShadow": "none",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "topRow": 10,
+                              "tooltip": "允许自主修改上限为5万公里",
+                              "labelWidth": "5",
+                              "type": "INPUT_WIDGET_V2",
+                              "animateLoading": true,
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultText"
+                                },
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
+                              "labelStyle": "BOLD",
+                              "inputType": "TEXT",
+                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
+                              "isRequired": true,
+                              "dynamicHeight": "FIXED",
+                              "iconName": "dashboard",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "version": 2,
+                              "isLoading": false,
+                              "regex": "^([1-9][0-9]{0,4}|50000)$",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "widgetName": "InputOdometer",
                               "dynamicPropertyPathList": [
                                 {
@@ -755,139 +789,33 @@
                                 }
                               ],
                               "displayName": "输入框",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
                                 "form",
                                 "text input",
                                 "number",
                                 "textarea"
                               ],
-                              "topRow": 10,
                               "bottomRow": 14,
                               "parentRowSpace": 10,
-                              "labelWidth": "4",
                               "autoFocus": false,
-                              "type": "INPUT_WIDGET_V2",
                               "hideCard": false,
-                              "animateLoading": true,
                               "parentColumnSpace": 13.4921875,
                               "dynamicTriggerPathList": [],
-                              "resetOnSubmit": true,
-                              "leftColumn": 0,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "defaultText"
-                                },
-                                {
-                                  "key": "isDisabled"
-                                }
-                              ],
                               "labelPosition": "Left",
-                              "labelStyle": "BOLD",
-                              "inputType": "TEXT",
-                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
                               "key": "x0ufohv2tq",
                               "labelTextSize": "1rem",
-                              "isRequired": true,
                               "isDeprecated": false,
                               "rightColumn": 29,
-                              "dynamicHeight": "FIXED",
-                              "iconName": "dashboard",
                               "widgetId": "cvwm8nv2ev",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "errorMessage": "允许修改上限为五万公里",
-                              "isVisible": true,
                               "label": "公里数",
-                              "version": 2,
                               "parentId": "r08azp1bju",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "regex": "^([1-9][0-9]{0,4}|50000)$",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
                               "isSpellCheck": false,
                               "iconAlign": "left",
                               "defaultText": "{{Select_Car_Detail.data[0].odometer}}",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 5,
-                              "tooltip": "车辆等级",
-                              "labelWidth": "4",
-                              "type": "INPUT_WIDGET_V2",
-                              "animateLoading": true,
-                              "resetOnSubmit": true,
-                              "leftColumn": 0,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "defaultText"
-                                },
-                                {
-                                  "key": "isDisabled"
-                                }
-                              ],
-                              "labelStyle": "BOLD",
-                              "inputType": "TEXT",
-                              "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
-                              "validation": "",
-                              "isRequired": true,
-                              "dynamicHeight": "FIXED",
-                              "iconName": "circle-arrow-up",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "version": 2,
-                              "isLoading": false,
-                              "regex": "^(?:[1-9]|1\\d|2[0-5])$",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "widgetName": "InputLevel",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "isDisabled"
-                                }
-                              ],
-                              "displayName": "输入框",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "bottomRow": 9,
-                              "parentRowSpace": 10,
-                              "autoFocus": false,
-                              "hideCard": false,
-                              "parentColumnSpace": 13.4921875,
-                              "dynamicTriggerPathList": [],
-                              "labelPosition": "Left",
-                              "key": "x0ufohv2tq",
-                              "labelTextSize": "1rem",
-                              "isDeprecated": false,
-                              "rightColumn": 29,
-                              "widgetId": "hw4xq7s7wl",
-                              "errorMessage": "等级范围只能是1-25之间",
-                              "label": "等级",
-                              "parentId": "r08azp1bju",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "maxDynamicHeight": 9000,
-                              "isSpellCheck": false,
-                              "iconAlign": "left",
-                              "defaultText": "{{Select_Car_Detail.data[0].level}}",
                               "minDynamicHeight": 4
                             },
                             {
@@ -1078,7 +1006,7 @@
                                 "字符"
                               ],
                               "topRow": 14,
-                              "bottomRow": 18,
+                              "bottomRow": 34,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -1118,7 +1046,7 @@
                               "originalTopRow": 14,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 18,
+                              "originalBottomRow": 34,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -1197,8 +1125,8 @@
                                 "submit",
                                 "button"
                               ],
-                              "topRow": 41,
-                              "bottomRow": 45,
+                              "topRow": 57,
+                              "bottomRow": 61,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
@@ -1233,10 +1161,10 @@
                               "parentId": "r08azp1bju",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 41,
+                              "originalTopRow": 57,
                               "disabledWhenInvalid": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "originalBottomRow": 45,
+                              "originalBottomRow": 61,
                               "buttonVariant": "PRIMARY",
                               "placement": "CENTER"
                             },
@@ -1255,7 +1183,7 @@
                                 "字符"
                               ],
                               "topRow": 39,
-                              "bottomRow": 43,
+                              "bottomRow": 47,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -1295,7 +1223,7 @@
                               "originalTopRow": 39,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 43,
+                              "originalBottomRow": 47,
                               "fontSize": "0.875rem",
                               "minDynamicHeight": 4
                             },
@@ -1407,8 +1335,8 @@
                                 "line",
                                 "divider"
                               ],
-                              "topRow": 43,
-                              "bottomRow": 47,
+                              "topRow": 47,
+                              "bottomRow": 51,
                               "parentRowSpace": 10,
                               "type": "DIVIDER_WIDGET",
                               "capType": "nc",
@@ -1431,8 +1359,8 @@
                               "parentId": "r08azp1bju",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 43,
-                              "originalBottomRow": 47
+                              "originalTopRow": 47,
+                              "originalBottomRow": 51
                             },
                             {
                               "boxShadow": "none",
@@ -1450,8 +1378,8 @@
                                 "dropdown",
                                 "select"
                               ],
-                              "topRow": 48,
-                              "bottomRow": 52,
+                              "topRow": 52,
+                              "bottomRow": 56,
                               "parentRowSpace": 10,
                               "labelWidth": "4",
                               "type": "SELECT_WIDGET",
@@ -1496,10 +1424,10 @@
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 48,
+                              "originalTopRow": 52,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 52,
+                              "originalBottomRow": 56,
                               "minDynamicHeight": 4
                             },
                             {
@@ -1516,8 +1444,8 @@
                                 "段落",
                                 "字符"
                               ],
-                              "topRow": 53,
-                              "bottomRow": 57,
+                              "topRow": 57,
+                              "bottomRow": 61,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -1557,11 +1485,134 @@
                               "parentId": "r08azp1bju",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 53,
+                              "originalTopRow": 57,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 57,
+                              "originalBottomRow": 61,
                               "fontSize": "1rem",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "widgetName": "Text_Level",
+                              "displayName": "文本",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label",
+                                "text",
+                                "文字",
+                                "标题",
+                                "段落",
+                                "字符"
+                              ],
+                              "topRow": 57,
+                              "bottomRow": 61,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 13.431640625,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 23,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "truncateButtonColor"
+                                },
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "text"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "text": "{{Select_Car_Detail.data[0].level}}",
+                              "key": "2185ecr6v1",
+                              "isDeprecated": false,
+                              "rightColumn": 26,
+                              "textAlign": "LEFT",
+                              "dynamicHeight": "AUTO_HEIGHT",
+                              "widgetId": "go4hwsgvpp",
+                              "isVisible": false,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "r08azp1bju",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "originalTopRow": 57,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "originalBottomRow": 61,
+                              "fontSize": "1rem",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Select_Level",
+                              "isFilterable": false,
+                              "dynamicPropertyPathList": [],
+                              "displayName": "下拉单选",
+                              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                              "labelText": "等级",
+                              "searchTags": [
+                                "dropdown",
+                                "select"
+                              ],
+                              "topRow": 5,
+                              "bottomRow": 9,
+                              "parentRowSpace": 10,
+                              "labelWidth": "4",
+                              "type": "SELECT_WIDGET",
+                              "serverSideFiltering": false,
+                              "hideCard": false,
+                              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Text_Level.text))(Select_Level.options, Select_Level.serverSideFiltering) }}",
+                              "animateLoading": true,
+                              "parentColumnSpace": 13.431640625,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultOptionValue"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelTooltip": "可自主修改范围：N - A9\n若您选择大于A9的等级将无法应用修改",
+                              "options": "[\n  {\n    \"label\": \"N\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"C9\",\n    \"value\": \"2\"\n  },\n  {\n    \"label\": \"C8\",\n    \"value\": \"3\"\n  },\n  {\n    \"label\": \"C7\",\n    \"value\": \"4\"\n  },\n  {\n    \"label\": \"C6\",\n    \"value\": \"5\"\n  },\n  {\n    \"label\": \"C5\",\n    \"value\": \"6\"\n  },\n  {\n    \"label\": \"C4\",\n    \"value\": \"7\"\n  },\n  {\n    \"label\": \"C3\",\n    \"value\": \"8\"\n  },\n  {\n    \"label\": \"C2\",\n    \"value\": \"9\"\n  },\n  {\n    \"label\": \"C1\",\n    \"value\": \"10\"\n  },\n  {\n    \"label\": \"B9\",\n    \"value\": \"11\"\n  },\n  {\n    \"label\": \"B8\",\n    \"value\": \"12\"\n  },\n  {\n    \"label\": \"B7\",\n    \"value\": \"13\"\n  },\n  {\n    \"label\": \"B6\",\n    \"value\": \"14\"\n  },\n  {\n    \"label\": \"B5\",\n    \"value\": \"15\"\n  },\n  {\n    \"label\": \"B4\",\n    \"value\": \"16\"\n  },\n  {\n    \"label\": \"B3\",\n    \"value\": \"17\"\n  },\n  {\n    \"label\": \"B2\",\n    \"value\": \"18\"\n  },\n  {\n    \"label\": \"B1\",\n    \"value\": \"19\"\n  },\n  {\n    \"label\": \"A9\",\n    \"value\": \"20\"\n  },\n  {\n    \"label\": \"A8（不允许自主修改）\",\n    \"value\": \"21\"\n  },\n  {\n    \"label\": \"A7（不允许自主修改）\",\n    \"value\": \"22\"\n  },\n  {\n    \"label\": \"A6（不允许自主修改）\",\n    \"value\": \"23\"\n  },\n  {\n    \"label\": \"A5（不允许自主修改）\",\n    \"value\": \"24\"\n  },\n  {\n    \"label\": \"A4（不允许自主修改）\",\n    \"value\": \"25\"\n  },\n  {\n    \"label\": \"A3（不允许自主修改）\",\n    \"value\": \"26\"\n  },\n  {\n    \"label\": \"A2（不允许自主修改）\",\n    \"value\": \"27\"\n  },\n  {\n    \"label\": \"A1（不允许自主修改）\",\n    \"value\": \"28\"\n  },\n  {\n    \"label\": \"S9（不允许自主修改）\",\n    \"value\": \"29\"\n  },\n  {\n    \"label\": \"S8（不允许自主修改）\",\n    \"value\": \"30\"\n  },\n  {\n    \"label\": \"S7（不允许自主修改）\",\n    \"value\": \"31\"\n  },\n  {\n    \"label\": \"S6（不允许自主修改）\",\n    \"value\": \"32\"\n  },\n  {\n    \"label\": \"S5（不允许自主修改）\",\n    \"value\": \"33\"\n  },\n  {\n    \"label\": \"S4（不允许自主修改）\",\n    \"value\": \"34\"\n  },\n  {\n    \"label\": \"S3（不允许自主修改）\",\n    \"value\": \"35\"\n  },\n  {\n    \"label\": \"S2（不允许自主修改）\",\n    \"value\": \"36\"\n  },\n  {\n    \"label\": \"S1（不允许自主修改）\",\n    \"value\": \"37\"\n  },\n  {\n    \"label\": \"SS9（不允许自主修改）\",\n    \"value\": \"38\"\n  },\n  {\n    \"label\": \"SS8（不允许自主修改）\",\n    \"value\": \"39\"\n  },\n  {\n    \"label\": \"SS7（不允许自主修改）\",\n    \"value\": \"40\"\n  },\n  {\n    \"label\": \"SS6（不允许自主修改）\",\n    \"value\": \"41\"\n  },\n  {\n    \"label\": \"SS5（不允许自主修改）\",\n    \"value\": \"42\"\n  },\n  {\n    \"label\": \"SS4（不允许自主修改）\",\n    \"value\": \"43\"\n  },\n  {\n    \"label\": \"SS3（不允许自主修改）\",\n    \"value\": \"44\"\n  },\n  {\n    \"label\": \"SS2（不允许自主修改）\",\n    \"value\": \"45\"\n  },\n  {\n    \"label\": \"SS1（不允许自主修改）\",\n    \"value\": \"46\"\n  },\n  {\n    \"label\": \"SSS9（不允许自主修改）\",\n    \"value\": \"47\"\n  },\n  {\n    \"label\": \"SSS8（不允许自主修改）\",\n    \"value\": \"48\"\n  },\n  {\n    \"label\": \"SSS7（不允许自主修改）\",\n    \"value\": \"49\"\n  },\n  {\n    \"label\": \"SSS6（不允许自主修改）\",\n    \"value\": \"50\"\n  },\n  {\n    \"label\": \"SSS5（不允许自主修改）\",\n    \"value\": \"51\"\n  },\n  {\n    \"label\": \"SSS4（不允许自主修改）\",\n    \"value\": \"52\"\n  },\n  {\n    \"label\": \"SSS3（不允许自主修改）\",\n    \"value\": \"53\"\n  },\n  {\n    \"label\": \"SSS2（不允许自主修改）\",\n    \"value\": \"54\"\n  },\n  {\n    \"label\": \"SSS1（不允许自主修改）\",\n    \"value\": \"55\"\n  },\n  {\n    \"label\": \"SSSS9（不允许自主修改）\",\n    \"value\": \"56\"\n  },\n  {\n    \"label\": \"SSSS8（不允许自主修改）\",\n    \"value\": \"57\"\n  },\n  {\n    \"label\": \"SSSS7（不允许自主修改）\",\n    \"value\": \"58\"\n  },\n  {\n    \"label\": \"SSSS6（不允许自主修改）\",\n    \"value\": \"59\"\n  },\n  {\n    \"label\": \"SSSS5（不允许自主修改）\",\n    \"value\": \"60\"\n  },\n  {\n    \"label\": \"SSSS4（不允许自主修改）\",\n    \"value\": \"61\"\n  },\n  {\n    \"label\": \"SSSS3（不允许自主修改）\",\n    \"value\": \"62\"\n  },\n  {\n    \"label\": \"SSSS2（不允许自主修改）\",\n    \"value\": \"63\"\n  },\n  {\n    \"label\": \"SSSS1（不允许自主修改）\",\n    \"value\": \"64\"\n  },\n  {\n    \"label\": \"SSSSS（不允许自主修改）\",\n    \"value\": \"65\"\n  }\n]",
+                              "labelStyle": "BOLD",
+                              "placeholderText": "请选择一个等级",
+                              "isDisabled": false,
+                              "key": "trd0ewf11h",
+                              "labelTextSize": "1rem",
+                              "isRequired": true,
+                              "isDeprecated": false,
+                              "rightColumn": 29,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "5rwp7032y1",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "r08azp1bju",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "originalTopRow": 41,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "originalBottomRow": 48,
                               "minDynamicHeight": 4
                             }
                           ],
@@ -1825,9 +1876,6 @@
                                   "key": "menuItems.menuItem1.isDisabled"
                                 },
                                 {
-                                  "key": "menuItems.menuItem2.isDisabled"
-                                },
-                                {
                                   "key": "menuItems.menuItem3.isDisabled"
                                 },
                                 {
@@ -1856,6 +1904,9 @@
                                 },
                                 {
                                   "key": "menuItems.menuItemwbqdcwd0ev.isDisabled"
+                                },
+                                {
+                                  "key": "menuItems.menuItem2.isDisabled"
                                 }
                               ],
                               "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
@@ -3805,7 +3856,7 @@
                         "字符"
                       ],
                       "topRow": 5,
-                      "bottomRow": 22,
+                      "bottomRow": 24,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -3828,7 +3879,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "- Ver1.7 修复名称与称号无法检测\n- Ver1.6 强制检测输入状态\n- Ver1.5 新增车辆轮毂修改\n- Ver1.4 修复禁用部分bug\n- Ver1.3 新增一键满改功能\n- Ver1.2 增加更多注释\n- Ver1.1 修复部分显示问题\n- Ver1.0 全新网站启用",
+                      "text": "- Ver1.8 改进等级修改\n- Ver1.7 修复名称与称号无法检测\n- Ver1.6 强制检测输入状态\n- Ver1.5 新增车辆轮毂修改\n- Ver1.4 修复禁用部分bug\n- Ver1.3 新增一键满改功能\n- Ver1.2 增加更多注释\n- Ver1.1 修复部分显示问题\n- Ver1.0 全新网站启用",
                       "key": "jwaf1crrzh",
                       "isDeprecated": false,
                       "rightColumn": 61,
@@ -3845,7 +3896,7 @@
                       "originalTopRow": 5,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 20,
+                      "originalBottomRow": 22,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }
