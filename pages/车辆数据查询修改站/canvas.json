@@ -123,7 +123,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "车辆数据查询&修改站 Ver1.９",
+              "text": "车辆数据查询&修改站 Ver1.9",
               "key": "t7vmm8l2gv",
               "isDeprecated": false,
               "rightColumn": 63,
