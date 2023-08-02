@@ -852,7 +852,7 @@
                               "isVisible": true,
                               "version": 2,
                               "isLoading": false,
-                              "regex": "^([ぁ-んァ-ン！：＠★・／]||[ァ-ン]||[Ａ-ｚ]||[０-９]){1,5}$",
+                              "regex": "^([ぁ-んァ-ン！：＠★・／アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨ゛゜ラリルレロワヲン＿ッァィゥェォャュョ－あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよ゛゜らりるれろわをん＿っぁぃぅぇぉゃゅょ－ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ１２３４５６７８９０＜？＋－＊÷＝；：／＼＿｜・＠！？＆★（）＾◇'ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ１２３４５６７８９０＜？＋－＊÷＝；：／＼＿｜・＠！？＆★（）＾◇'　]){1,5}$",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "widgetName": "InputName",
                               "dynamicPropertyPathList": [
@@ -879,7 +879,7 @@
                               "isDeprecated": false,
                               "rightColumn": 29,
                               "widgetId": "ujnwg56gxy",
-                              "errorMessage": "请检查您是否使用了全角输入",
+                              "errorMessage": "请检查您是否使用了全角输入\n并且位数是否超出五位",
                               "label": "名称",
                               "parentId": "r08azp1bju",
                               "labelAlignment": "left",
@@ -3903,7 +3903,7 @@
                       "originalTopRow": 5,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 24,
+                      "originalBottomRow": 25,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }
