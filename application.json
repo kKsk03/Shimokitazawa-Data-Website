@@ -27,7 +27,7 @@
   "color": "#F4FFDE",
   "icon": "bag",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
   },
   "publishedAppLayout": {
     "type": "DESKTOP"

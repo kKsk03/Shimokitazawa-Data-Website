@@ -58,7 +58,7 @@
               ],
               "labelPosition": "Top",
               "labelStyle": "",
-              "inputType": "TEXT",
+              "inputType": "PASSWORD",
               "maxChars": "35",
               "isDisabled": false,
               "key": "e5t9xsxsdm",
@@ -4150,7 +4150,7 @@
                       "originalTopRow": 5,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 25,
+                      "originalBottomRow": 27,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }
