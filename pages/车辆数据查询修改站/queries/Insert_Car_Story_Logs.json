@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO public.\"CarStoryModifyHistory\"(\n \t\"newStory\", \"editorIPAdress\", \"editorTime\")\n\tVALUES ( {{appsmith.store.FinalStory.Number}} , {{appsmith.store.FinalStory.IPAdress}} , {{appsmith.store.FinalStory.Time}} );",
+      "body": "INSERT INTO public.\"CarStoryModifyHistory\"(\n \t\"newStory\", \"editorIPAdress\", \"editorTime\", \"modifyCarId\")\n\tVALUES ( {{appsmith.store.FinalStory.Number}} , {{appsmith.store.FinalStory.IPAdress}} , {{appsmith.store.FinalStory.Time}} , {{appsmith.store.FinalStory.CarId}}  );",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,6 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "appsmith.store.FinalStory.CarId",
       "appsmith.store.FinalStory.IPAdress",
       "appsmith.store.FinalStory.Number",
       "appsmith.store.FinalStory.Time"
