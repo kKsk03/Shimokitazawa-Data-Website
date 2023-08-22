@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO public.\"CarModifyHistory\"(\n\t\"editorIPAddress\", \"newName\", \"newLevel\", \"newOdo\", \"newTitle\", \"newTrophy\", \"newPlateNum\", \"newArea\", \"newOtherColor\", \"newWheel\", \"editedTime\")\n\tVALUES ( {{appsmith.store.Logs.IPAdress}} , {{appsmith.store.Logs.Name}} , {{appsmith.store.Logs.Level}} , {{appsmith.store.Logs.Odo}} , {{appsmith.store.Logs.Title}} , {{appsmith.store.Logs.Trophy}} , {{appsmith.store.Logs.PlateNum}} , {{appsmith.store.Logs.Area}} , {{appsmith.store.Logs.OtherColor}} , {{appsmith.store.Logs.Wheel}} , {{appsmith.store.Logs.TimeStamp}} );",
+      "body": "INSERT INTO public.\"CarModifyHistory\"(\n\t\"editorIPAddress\", \"newName\", \"newLevel\", \"newOdo\", \"newTitle\", \"newTrophy\", \"newPlateNum\", \"newArea\", \"newOtherColor\", \"newWheel\", \"editedTime\", \"editedCarId\")\n\tVALUES ( {{appsmith.store.Logs.IPAdress}} , {{appsmith.store.Logs.Name}} , {{appsmith.store.Logs.Level}} , {{appsmith.store.Logs.Odo}} , {{appsmith.store.Logs.Title}} , {{appsmith.store.Logs.Trophy}} , {{appsmith.store.Logs.PlateNum}} , {{appsmith.store.Logs.Area}} , {{appsmith.store.Logs.OtherColor}} , {{appsmith.store.Logs.Wheel}} , {{appsmith.store.Logs.TimeStamp}} , {{appsmith.store.Logs.CarId}} );",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,6 +37,7 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.store.Logs.Area",
+      "appsmith.store.Logs.CarId",
       "appsmith.store.Logs.IPAdress",
       "appsmith.store.Logs.Level",
       "appsmith.store.Logs.Name",
