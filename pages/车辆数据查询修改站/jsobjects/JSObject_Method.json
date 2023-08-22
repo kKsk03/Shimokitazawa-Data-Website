@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject_Method",
+    "pageId": "车辆数据查询修改站",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tGetUserIP: () => {\n\t\treturn fetch('https://api.ipify.org?format=json')\n\t\t\t.then(response => response.json())\n\t\t\t.then(data => (data.ip))\n\t\t\t.catch(error => (false));\n\t},\n\tTimeStamp: () => {\n\t\tconst ts = new Date().getTime();\n\t\treturn ts;\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "车辆数据查询修改站_JSObject_Method",
+  "deleted": false,
+  "gitSyncId": "6485dc0a6fbfd93d5cd41d7a_64e39b046fbfd93d5cd562a2"
+}

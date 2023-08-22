@@ -2,6 +2,7 @@
   "unpublishedPage": {
     "name": "车辆数据查询修改站",
     "slug": "",
+    "customSlug": "",
     "layouts": [
       {
         "viewMode": false,
@@ -123,7 +124,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "车辆数据查询&修改站 Ver1.9.1",
+              "text": "车辆数据查询&修改站 Ver2.0.0",
               "key": "t7vmm8l2gv",
               "isDeprecated": false,
               "rightColumn": 63,
@@ -708,7 +709,7 @@
                               "isVisible": true,
                               "version": 2,
                               "isLoading": false,
-                              "regex": "^.{1,8}$",
+                              "regex": "^.{1,15}$",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "widgetName": "InputTitle",
                               "dynamicPropertyPathList": [
@@ -735,7 +736,7 @@
                               "isDeprecated": false,
                               "rightColumn": 19,
                               "widgetId": "16wgymhoho",
-                              "errorMessage": "您的车辆称号，最长8位",
+                              "errorMessage": "您的车辆称号，最长15位",
                               "label": "称号",
                               "parentId": "r08azp1bju",
                               "labelAlignment": "left",
@@ -780,7 +781,7 @@
                               "isVisible": true,
                               "version": 2,
                               "isLoading": false,
-                              "regex": "^([1-9][0-9]{0,4}|50000)$",
+                              "regex": "^([1-9][0-9]{0,4}|500000)$",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "widgetName": "InputOdometer",
                               "dynamicPropertyPathList": [
@@ -807,7 +808,7 @@
                               "isDeprecated": false,
                               "rightColumn": 19,
                               "widgetId": "cvwm8nv2ev",
-                              "errorMessage": "允许修改上限为五万公里",
+                              "errorMessage": "允许修改上限为五十万公里",
                               "label": "公里数",
                               "parentId": "r08azp1bju",
                               "labelAlignment": "left",
@@ -1006,7 +1007,7 @@
                                 "字符"
                               ],
                               "topRow": 14,
-                              "bottomRow": 42,
+                              "bottomRow": 18,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -1046,7 +1047,7 @@
                               "originalTopRow": 14,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 18,
+                              "originalBottomRow": 42,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -1183,7 +1184,7 @@
                                 "字符"
                               ],
                               "topRow": 39,
-                              "bottomRow": 47,
+                              "bottomRow": 43,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -1223,7 +1224,7 @@
                               "originalTopRow": 39,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 43,
+                              "originalBottomRow": 47,
                               "fontSize": "0.875rem",
                               "minDynamicHeight": 4
                             },
@@ -1335,8 +1336,8 @@
                                 "line",
                                 "divider"
                               ],
-                              "topRow": 47,
-                              "bottomRow": 51,
+                              "topRow": 43,
+                              "bottomRow": 47,
                               "parentRowSpace": 10,
                               "type": "DIVIDER_WIDGET",
                               "capType": "nc",
@@ -1359,8 +1360,8 @@
                               "parentId": "r08azp1bju",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 43,
-                              "originalBottomRow": 47
+                              "originalTopRow": 47,
+                              "originalBottomRow": 51
                             },
                             {
                               "boxShadow": "none",
@@ -1378,8 +1379,8 @@
                                 "dropdown",
                                 "select"
                               ],
-                              "topRow": 52,
-                              "bottomRow": 56,
+                              "topRow": 48,
+                              "bottomRow": 52,
                               "parentRowSpace": 10,
                               "labelWidth": "3",
                               "type": "SELECT_WIDGET",
@@ -1424,10 +1425,10 @@
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 48,
+                              "originalTopRow": 52,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 52,
+                              "originalBottomRow": 56,
                               "minDynamicHeight": 4
                             },
                             {
@@ -1444,8 +1445,8 @@
                                 "段落",
                                 "字符"
                               ],
-                              "topRow": 57,
-                              "bottomRow": 61,
+                              "topRow": 53,
+                              "bottomRow": 57,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -1485,10 +1486,10 @@
                               "parentId": "r08azp1bju",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 53,
+                              "originalTopRow": 57,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 57,
+                              "originalBottomRow": 61,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -1506,8 +1507,8 @@
                                 "段落",
                                 "字符"
                               ],
-                              "topRow": 57,
-                              "bottomRow": 61,
+                              "topRow": 53,
+                              "bottomRow": 57,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -1547,10 +1548,10 @@
                               "parentId": "r08azp1bju",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 53,
+                              "originalTopRow": 57,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 57,
+                              "originalBottomRow": 61,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -1597,8 +1598,8 @@
                                 }
                               ],
                               "labelPosition": "Left",
-                              "labelTooltip": "可自主修改范围：N - A9\n若您选择大于A9的等级将无法应用修改",
-                              "options": "[\n  {\n    \"label\": \"N\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"C9\",\n    \"value\": \"2\"\n  },\n  {\n    \"label\": \"C8\",\n    \"value\": \"3\"\n  },\n  {\n    \"label\": \"C7\",\n    \"value\": \"4\"\n  },\n  {\n    \"label\": \"C6\",\n    \"value\": \"5\"\n  },\n  {\n    \"label\": \"C5\",\n    \"value\": \"6\"\n  },\n  {\n    \"label\": \"C4\",\n    \"value\": \"7\"\n  },\n  {\n    \"label\": \"C3\",\n    \"value\": \"8\"\n  },\n  {\n    \"label\": \"C2\",\n    \"value\": \"9\"\n  },\n  {\n    \"label\": \"C1\",\n    \"value\": \"10\"\n  },\n  {\n    \"label\": \"B9\",\n    \"value\": \"11\"\n  },\n  {\n    \"label\": \"B8\",\n    \"value\": \"12\"\n  },\n  {\n    \"label\": \"B7\",\n    \"value\": \"13\"\n  },\n  {\n    \"label\": \"B6\",\n    \"value\": \"14\"\n  },\n  {\n    \"label\": \"B5\",\n    \"value\": \"15\"\n  },\n  {\n    \"label\": \"B4\",\n    \"value\": \"16\"\n  },\n  {\n    \"label\": \"B3\",\n    \"value\": \"17\"\n  },\n  {\n    \"label\": \"B2\",\n    \"value\": \"18\"\n  },\n  {\n    \"label\": \"B1\",\n    \"value\": \"19\"\n  },\n  {\n    \"label\": \"A9\",\n    \"value\": \"20\"\n  },\n  {\n    \"label\": \"A8（不允许自主修改）\",\n    \"value\": \"21\"\n  },\n  {\n    \"label\": \"A7（不允许自主修改）\",\n    \"value\": \"22\"\n  },\n  {\n    \"label\": \"A6（不允许自主修改）\",\n    \"value\": \"23\"\n  },\n  {\n    \"label\": \"A5（不允许自主修改）\",\n    \"value\": \"24\"\n  },\n  {\n    \"label\": \"A4（不允许自主修改）\",\n    \"value\": \"25\"\n  },\n  {\n    \"label\": \"A3（不允许自主修改）\",\n    \"value\": \"26\"\n  },\n  {\n    \"label\": \"A2（不允许自主修改）\",\n    \"value\": \"27\"\n  },\n  {\n    \"label\": \"A1（不允许自主修改）\",\n    \"value\": \"28\"\n  },\n  {\n    \"label\": \"S9（不允许自主修改）\",\n    \"value\": \"29\"\n  },\n  {\n    \"label\": \"S8（不允许自主修改）\",\n    \"value\": \"30\"\n  },\n  {\n    \"label\": \"S7（不允许自主修改）\",\n    \"value\": \"31\"\n  },\n  {\n    \"label\": \"S6（不允许自主修改）\",\n    \"value\": \"32\"\n  },\n  {\n    \"label\": \"S5（不允许自主修改）\",\n    \"value\": \"33\"\n  },\n  {\n    \"label\": \"S4（不允许自主修改）\",\n    \"value\": \"34\"\n  },\n  {\n    \"label\": \"S3（不允许自主修改）\",\n    \"value\": \"35\"\n  },\n  {\n    \"label\": \"S2（不允许自主修改）\",\n    \"value\": \"36\"\n  },\n  {\n    \"label\": \"S1（不允许自主修改）\",\n    \"value\": \"37\"\n  },\n  {\n    \"label\": \"SS9（不允许自主修改）\",\n    \"value\": \"38\"\n  },\n  {\n    \"label\": \"SS8（不允许自主修改）\",\n    \"value\": \"39\"\n  },\n  {\n    \"label\": \"SS7（不允许自主修改）\",\n    \"value\": \"40\"\n  },\n  {\n    \"label\": \"SS6（不允许自主修改）\",\n    \"value\": \"41\"\n  },\n  {\n    \"label\": \"SS5（不允许自主修改）\",\n    \"value\": \"42\"\n  },\n  {\n    \"label\": \"SS4（不允许自主修改）\",\n    \"value\": \"43\"\n  },\n  {\n    \"label\": \"SS3（不允许自主修改）\",\n    \"value\": \"44\"\n  },\n  {\n    \"label\": \"SS2（不允许自主修改）\",\n    \"value\": \"45\"\n  },\n  {\n    \"label\": \"SS1（不允许自主修改）\",\n    \"value\": \"46\"\n  },\n  {\n    \"label\": \"SSS9（不允许自主修改）\",\n    \"value\": \"47\"\n  },\n  {\n    \"label\": \"SSS8（不允许自主修改）\",\n    \"value\": \"48\"\n  },\n  {\n    \"label\": \"SSS7（不允许自主修改）\",\n    \"value\": \"49\"\n  },\n  {\n    \"label\": \"SSS6（不允许自主修改）\",\n    \"value\": \"50\"\n  },\n  {\n    \"label\": \"SSS5（不允许自主修改）\",\n    \"value\": \"51\"\n  },\n  {\n    \"label\": \"SSS4（不允许自主修改）\",\n    \"value\": \"52\"\n  },\n  {\n    \"label\": \"SSS3（不允许自主修改）\",\n    \"value\": \"53\"\n  },\n  {\n    \"label\": \"SSS2（不允许自主修改）\",\n    \"value\": \"54\"\n  },\n  {\n    \"label\": \"SSS1（不允许自主修改）\",\n    \"value\": \"55\"\n  },\n  {\n    \"label\": \"SSSS9（不允许自主修改）\",\n    \"value\": \"56\"\n  },\n  {\n    \"label\": \"SSSS8（不允许自主修改）\",\n    \"value\": \"57\"\n  },\n  {\n    \"label\": \"SSSS7（不允许自主修改）\",\n    \"value\": \"58\"\n  },\n  {\n    \"label\": \"SSSS6（不允许自主修改）\",\n    \"value\": \"59\"\n  },\n  {\n    \"label\": \"SSSS5（不允许自主修改）\",\n    \"value\": \"60\"\n  },\n  {\n    \"label\": \"SSSS4（不允许自主修改）\",\n    \"value\": \"61\"\n  },\n  {\n    \"label\": \"SSSS3（不允许自主修改）\",\n    \"value\": \"62\"\n  },\n  {\n    \"label\": \"SSSS2（不允许自主修改）\",\n    \"value\": \"63\"\n  },\n  {\n    \"label\": \"SSSS1（不允许自主修改）\",\n    \"value\": \"64\"\n  },\n  {\n    \"label\": \"SSSSS（不允许自主修改）\",\n    \"value\": \"65\"\n  }\n]",
+                              "labelTooltip": "可自主修改范围：N - SS2\n若您选择大于SS2的等级将无法应用修改",
+                              "options": "[\n  {\n    \"label\": \"N\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"C9\",\n    \"value\": \"2\"\n  },\n  {\n    \"label\": \"C8\",\n    \"value\": \"3\"\n  },\n  {\n    \"label\": \"C7\",\n    \"value\": \"4\"\n  },\n  {\n    \"label\": \"C6\",\n    \"value\": \"5\"\n  },\n  {\n    \"label\": \"C5\",\n    \"value\": \"6\"\n  },\n  {\n    \"label\": \"C4\",\n    \"value\": \"7\"\n  },\n  {\n    \"label\": \"C3\",\n    \"value\": \"8\"\n  },\n  {\n    \"label\": \"C2\",\n    \"value\": \"9\"\n  },\n  {\n    \"label\": \"C1\",\n    \"value\": \"10\"\n  },\n  {\n    \"label\": \"B9\",\n    \"value\": \"11\"\n  },\n  {\n    \"label\": \"B8\",\n    \"value\": \"12\"\n  },\n  {\n    \"label\": \"B7\",\n    \"value\": \"13\"\n  },\n  {\n    \"label\": \"B6\",\n    \"value\": \"14\"\n  },\n  {\n    \"label\": \"B5\",\n    \"value\": \"15\"\n  },\n  {\n    \"label\": \"B4\",\n    \"value\": \"16\"\n  },\n  {\n    \"label\": \"B3\",\n    \"value\": \"17\"\n  },\n  {\n    \"label\": \"B2\",\n    \"value\": \"18\"\n  },\n  {\n    \"label\": \"B1\",\n    \"value\": \"19\"\n  },\n  {\n    \"label\": \"A9\",\n    \"value\": \"20\"\n  },\n  {\n    \"label\": \"A8\",\n    \"value\": \"21\"\n  },\n  {\n    \"label\": \"A7\",\n    \"value\": \"22\"\n  },\n  {\n    \"label\": \"A6\",\n    \"value\": \"23\"\n  },\n  {\n    \"label\": \"A5\",\n    \"value\": \"24\"\n  },\n  {\n    \"label\": \"A4\",\n    \"value\": \"25\"\n  },\n  {\n    \"label\": \"A3\",\n    \"value\": \"26\"\n  },\n  {\n    \"label\": \"A2\",\n    \"value\": \"27\"\n  },\n  {\n    \"label\": \"A1\",\n    \"value\": \"28\"\n  },\n  {\n    \"label\": \"S9\",\n    \"value\": \"29\"\n  },\n  {\n    \"label\": \"S8\",\n    \"value\": \"30\"\n  },\n  {\n    \"label\": \"S7\",\n    \"value\": \"31\"\n  },\n  {\n    \"label\": \"S6\",\n    \"value\": \"32\"\n  },\n  {\n    \"label\": \"S5\",\n    \"value\": \"33\"\n  },\n  {\n    \"label\": \"S4\",\n    \"value\": \"34\"\n  },\n  {\n    \"label\": \"S3\",\n    \"value\": \"35\"\n  },\n  {\n    \"label\": \"S2\",\n    \"value\": \"36\"\n  },\n  {\n    \"label\": \"S1\",\n    \"value\": \"37\"\n  },\n  {\n    \"label\": \"SS9\",\n    \"value\": \"38\"\n  },\n  {\n    \"label\": \"SS8\",\n    \"value\": \"39\"\n  },\n  {\n    \"label\": \"SS7\",\n    \"value\": \"40\"\n  },\n  {\n    \"label\": \"SS6（\",\n    \"value\": \"41\"\n  },\n  {\n    \"label\": \"SS5\",\n    \"value\": \"42\"\n  },\n  {\n    \"label\": \"SS4\",\n    \"value\": \"43\"\n  },\n  {\n    \"label\": \"SS3\",\n    \"value\": \"44\"\n  },\n  {\n    \"label\": \"SS2\",\n    \"value\": \"45\"\n  },\n  {\n    \"label\": \"SS1（不允许自主修改）\",\n    \"value\": \"46\"\n  },\n  {\n    \"label\": \"SSS9（不允许自主修改）\",\n    \"value\": \"47\"\n  },\n  {\n    \"label\": \"SSS8（不允许自主修改）\",\n    \"value\": \"48\"\n  },\n  {\n    \"label\": \"SSS7（不允许自主修改）\",\n    \"value\": \"49\"\n  },\n  {\n    \"label\": \"SSS6（不允许自主修改）\",\n    \"value\": \"50\"\n  },\n  {\n    \"label\": \"SSS5（不允许自主修改）\",\n    \"value\": \"51\"\n  },\n  {\n    \"label\": \"SSS4（不允许自主修改）\",\n    \"value\": \"52\"\n  },\n  {\n    \"label\": \"SSS3（不允许自主修改）\",\n    \"value\": \"53\"\n  },\n  {\n    \"label\": \"SSS2（不允许自主修改）\",\n    \"value\": \"54\"\n  },\n  {\n    \"label\": \"SSS1（不允许自主修改）\",\n    \"value\": \"55\"\n  },\n  {\n    \"label\": \"SSSS9（不允许自主修改）\",\n    \"value\": \"56\"\n  },\n  {\n    \"label\": \"SSSS8（不允许自主修改）\",\n    \"value\": \"57\"\n  },\n  {\n    \"label\": \"SSSS7（不允许自主修改）\",\n    \"value\": \"58\"\n  },\n  {\n    \"label\": \"SSSS6（不允许自主修改）\",\n    \"value\": \"59\"\n  },\n  {\n    \"label\": \"SSSS5（不允许自主修改）\",\n    \"value\": \"60\"\n  },\n  {\n    \"label\": \"SSSS4（不允许自主修改）\",\n    \"value\": \"61\"\n  },\n  {\n    \"label\": \"SSSS3（不允许自主修改）\",\n    \"value\": \"62\"\n  },\n  {\n    \"label\": \"SSSS2（不允许自主修改）\",\n    \"value\": \"63\"\n  },\n  {\n    \"label\": \"SSSS1（不允许自主修改）\",\n    \"value\": \"64\"\n  },\n  {\n    \"label\": \"SSSSS（不允许自主修改）\",\n    \"value\": \"65\"\n  }\n]",
                               "labelStyle": "BOLD",
                               "placeholderText": "请选择一个等级",
                               "isDisabled": "{{!SelectCarId.selectedOptionValue}}",
@@ -1825,7 +1826,7 @@
                                 "字符"
                               ],
                               "topRow": 5,
-                              "bottomRow": 27,
+                              "bottomRow": 9,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -1865,7 +1866,7 @@
                               "originalTopRow": 5,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 9,
+                              "originalBottomRow": 27,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             }
@@ -2179,7 +2180,7 @@
                                   "isVisible": true,
                                   "isDisabled": "{{Select_Car_Detail.data[0].stClearCount >= 99}}",
                                   "index": 0,
-                                  "onClick": "{{JSObject_StorySetting.story_menu_99()\n\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
+                                  "onClick": "{{JSObject_StorySetting.story_menu_99()\n.then(() => JSObject_Logs.UpdateStoryLogs())\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
                                 },
                                 "menuItem2": {
                                   "label": "199集 / 二周目",
@@ -2188,7 +2189,7 @@
                                   "isVisible": true,
                                   "isDisabled": "{{Select_Car_Detail.data[0].stClearCount >= 199}}",
                                   "index": 1,
-                                  "onClick": "{{JSObject_StorySetting.story_menu_199()\n\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
+                                  "onClick": "{{JSObject_StorySetting.story_menu_199()\n.then(() => JSObject_Logs.UpdateStoryLogs())\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
                                 },
                                 "menuItem3": {
                                   "label": "299集 / 三周目",
@@ -2197,7 +2198,7 @@
                                   "isVisible": true,
                                   "isDisabled": "{{Select_Car_Detail.data[0].stClearCount >= 299}}",
                                   "index": 2,
-                                  "onClick": "{{JSObject_StorySetting.story_menu_299()\n\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
+                                  "onClick": "{{JSObject_StorySetting.story_menu_299()\n.then(() => JSObject_Logs.UpdateStoryLogs())\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
                                 },
                                 "menuItem8b4nva0n6m": {
                                   "id": "menuItem8b4nva0n6m",
@@ -2206,7 +2207,7 @@
                                   "widgetId": "g82041yl53",
                                   "isDisabled": "{{Select_Car_Detail.data[0].stClearCount >= 399}}",
                                   "isVisible": true,
-                                  "onClick": "{{JSObject_StorySetting.story_menu_399()\n\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
+                                  "onClick": "{{JSObject_StorySetting.story_menu_399()\n.then(() => JSObject_Logs.UpdateStoryLogs())\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
                                 },
                                 "menuItemvgltggxepd": {
                                   "id": "menuItemvgltggxepd",
@@ -2215,7 +2216,7 @@
                                   "widgetId": "u41hoewyzu",
                                   "isDisabled": "{{Select_Car_Detail.data[0].stClearCount >= 499}}",
                                   "isVisible": true,
-                                  "onClick": "{{JSObject_StorySetting.story_menu_499()\n\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
+                                  "onClick": "{{JSObject_StorySetting.story_menu_499()\n.then(() => JSObject_Logs.UpdateStoryLogs())\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
                                 },
                                 "menuIteme5w4lwa5w1": {
                                   "id": "menuIteme5w4lwa5w1",
@@ -2224,7 +2225,7 @@
                                   "widgetId": "hn38p4av16",
                                   "isDisabled": "{{Select_Car_Detail.data[0].stClearCount >= 599}}",
                                   "isVisible": true,
-                                  "onClick": "{{JSObject_StorySetting.story_menu_599()\n\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
+                                  "onClick": "{{JSObject_StorySetting.story_menu_599()\n.then(() => JSObject_Logs.UpdateStoryLogs())\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
                                 },
                                 "menuItemwbqdcwd0ev": {
                                   "id": "menuItemwbqdcwd0ev",
@@ -2233,7 +2234,7 @@
                                   "widgetId": "dotyauyuji",
                                   "isDisabled": "{{Select_Car_Detail.data[0].stClearCount >= 699}}",
                                   "isVisible": true,
-                                  "onClick": "{{JSObject_StorySetting.story_menu_699()\n\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
+                                  "onClick": "{{JSObject_StorySetting.story_menu_699()\n.then(() => JSObject_Logs.UpdateStoryLogs())\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
                                 },
                                 "menuItemk5hhkj41uf": {
                                   "id": "menuItemk5hhkj41uf",
@@ -2242,7 +2243,7 @@
                                   "widgetId": "9uyqspb3s9",
                                   "isDisabled": "{{Select_Car_Detail.data[0].stClearCount >= 799}}",
                                   "isVisible": true,
-                                  "onClick": "{{JSObject_StorySetting.story_menu_799()\n\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
+                                  "onClick": "{{JSObject_StorySetting.story_menu_799()\n.then(() => JSObject_Logs.UpdateStoryLogs())\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
                                 },
                                 "menuItemu5rrv3gvr5": {
                                   "id": "menuItemu5rrv3gvr5",
@@ -2251,7 +2252,7 @@
                                   "widgetId": "4lrfx0uj30",
                                   "isDisabled": "{{Select_Car_Detail.data[0].stClearCount >= 899}}",
                                   "isVisible": true,
-                                  "onClick": "{{JSObject_StorySetting.story_menu_899()\n\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
+                                  "onClick": "{{JSObject_StorySetting.story_menu_899()\n.then(() => JSObject_Logs.UpdateStoryLogs())\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
                                 },
                                 "menuItemkbv3go9w2g": {
                                   "id": "menuItemkbv3go9w2g",
@@ -2260,7 +2261,7 @@
                                   "widgetId": "0w98qfyq0e",
                                   "isDisabled": "{{Select_Car_Detail.data[0].stClearCount >= 999}}",
                                   "isVisible": true,
-                                  "onClick": "{{JSObject_StorySetting.story_menu_999()\n\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
+                                  "onClick": "{{JSObject_StorySetting.story_menu_999()\n.then(() => JSObject_Logs.UpdateStoryLogs())\n.then(() => Update_Story.run())\n.then(() => Select_Car_Detail.run())\n.then(() => showAlert(\"已修改\"))}}"
                                 }
                               },
                               "isVisible": true,
@@ -2346,7 +2347,7 @@
                                 "字符"
                               ],
                               "topRow": 4,
-                              "bottomRow": 21,
+                              "bottomRow": 8,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -2387,7 +2388,7 @@
                               "originalTopRow": 4,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 8,
+                              "originalBottomRow": 21,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -2405,8 +2406,8 @@
                                 "段落",
                                 "字符"
                               ],
-                              "topRow": 21,
-                              "bottomRow": 25,
+                              "topRow": 8,
+                              "bottomRow": 12,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -2443,10 +2444,10 @@
                               "parentId": "dvcbfilg7l",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 8,
+                              "originalTopRow": 21,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 12,
+                              "originalBottomRow": 25,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -2464,8 +2465,8 @@
                                 "段落",
                                 "字符"
                               ],
-                              "topRow": 25,
-                              "bottomRow": 45,
+                              "topRow": 12,
+                              "bottomRow": 16,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -2502,10 +2503,10 @@
                               "parentId": "dvcbfilg7l",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 12,
+                              "originalTopRow": 25,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 16,
+                              "originalBottomRow": 45,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             }
@@ -4110,7 +4111,7 @@
                         "字符"
                       ],
                       "topRow": 5,
-                      "bottomRow": 27,
+                      "bottomRow": 31,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -4133,7 +4134,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "- Ver1.9.1 再次修复名称判断\n- Ver1.9 修复判断错误\n- Ver1.8 改进等级修改\n- Ver1.7 修复名称与称号无法检测\n- Ver1.6 强制检测输入状态\n- Ver1.5 新增车辆轮毂修改\n- Ver1.4 修复禁用部分bug\n- Ver1.3 新增一键满改功能\n- Ver1.2 增加更多注释\n- Ver1.1 修复部分显示问题\n- Ver1.0 全新网站启用",
+                      "text": "- Ver2.1 提升部分可修改上限\n- Ver2.0 安全升级并新增操作记录\n- Ver1.9.1 再次修复名称判断\n- Ver1.9 修复判断错误\n- Ver1.8 改进等级修改\n- Ver1.7 修复名称与称号无法检测\n- Ver1.6 强制检测输入状态\n- Ver1.5 新增车辆轮毂修改\n- Ver1.4 修复禁用部分bug\n- Ver1.3 新增一键满改功能\n- Ver1.2 增加更多注释\n- Ver1.1 修复部分显示问题\n- Ver1.0 全新网站启用",
                       "key": "jwaf1crrzh",
                       "isDeprecated": false,
                       "rightColumn": 61,
@@ -4150,7 +4151,7 @@
                       "originalTopRow": 5,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 27,
+                      "originalBottomRow": 29,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }

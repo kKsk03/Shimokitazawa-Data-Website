@@ -65,7 +65,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "OLG WMMT数据站",
+              "text": "Shimokitazawa数据站",
               "key": "7ljxf9kw83",
               "isDeprecated": false,
               "rightColumn": 63,
@@ -82,7 +82,7 @@
               "originalTopRow": 2,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 25,
+              "originalBottomRow": 10,
               "fontSize": "3.75rem",
               "minDynamicHeight": 4
             }
