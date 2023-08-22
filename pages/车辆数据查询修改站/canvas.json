@@ -1047,7 +1047,7 @@
                               "originalTopRow": 14,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 42,
+                              "originalBottomRow": 18,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -1224,7 +1224,7 @@
                               "originalTopRow": 39,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 47,
+                              "originalBottomRow": 43,
                               "fontSize": "0.875rem",
                               "minDynamicHeight": 4
                             },
@@ -1360,8 +1360,8 @@
                               "parentId": "r08azp1bju",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 47,
-                              "originalBottomRow": 51
+                              "originalTopRow": 43,
+                              "originalBottomRow": 47
                             },
                             {
                               "boxShadow": "none",
@@ -1425,10 +1425,10 @@
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 52,
+                              "originalTopRow": 48,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 56,
+                              "originalBottomRow": 52,
                               "minDynamicHeight": 4
                             },
                             {
@@ -1486,10 +1486,10 @@
                               "parentId": "r08azp1bju",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 57,
+                              "originalTopRow": 53,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 61,
+                              "originalBottomRow": 57,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -1548,10 +1548,10 @@
                               "parentId": "r08azp1bju",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 57,
+                              "originalTopRow": 53,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 61,
+                              "originalBottomRow": 57,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -1866,7 +1866,7 @@
                               "originalTopRow": 5,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 27,
+                              "originalBottomRow": 9,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             }
@@ -1888,7 +1888,7 @@
                           "tabId": "tab2",
                           "widgetName": "Canvas3",
                           "displayName": "Canvas",
-                          "bottomRow": 640,
+                          "bottomRow": 680,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
@@ -2507,6 +2507,66 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
                               "originalBottomRow": 45,
+                              "fontSize": "1rem",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "widgetName": "Text24",
+                              "displayName": "文本",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label",
+                                "text",
+                                "文字",
+                                "标题",
+                                "段落",
+                                "字符"
+                              ],
+                              "topRow": 9,
+                              "bottomRow": 13,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 17.912109375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "truncateButtonColor"
+                                },
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "textColor"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "text": "提交修改后请等上方已完成集数更新后，才为修改成功！",
+                              "key": "rm3p0pv235",
+                              "isDeprecated": false,
+                              "rightColumn": 29,
+                              "textAlign": "LEFT",
+                              "dynamicHeight": "AUTO_HEIGHT",
+                              "widgetId": "bis0fkw9aq",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "version": 1,
+                              "parentId": "dvcbfilg7l",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             }
@@ -4151,7 +4211,7 @@
                       "originalTopRow": 5,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 29,
+                      "originalBottomRow": 31,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }
